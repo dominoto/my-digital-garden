@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/swapping-heroku-with-render-and-fly-io-for-your-full-stack-react-app/"}
+{"dg-publish":true,"permalink":"/digital-garden/swapping-heroku-with-render-and-fly-io-for-your-full-stack-react-app/","created":"2024-02-13","updated":"2024-02-13"}
 ---
 
 If you are following some tutorial for a project that still relies on Heroku which is not free anymore, and you want a free alternative, continue reading 🙂
