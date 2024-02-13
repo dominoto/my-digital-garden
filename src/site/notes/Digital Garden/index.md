@@ -5,3 +5,7 @@
 Let us test if this is working.
 
 Link to [[Digital Garden/Random note\|Random note]]
+# Proba 1
+## Proba 2
+### Proba 3
+#### Proba 4
