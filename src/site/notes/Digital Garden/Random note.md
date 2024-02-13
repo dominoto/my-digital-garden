@@ -3,4 +3,4 @@
 ---
 
 
-This is a random note to test linking. Return to [[Digital Garden/index\|index]]
+This is a random note to test linking. Return to [[Digital Garden/Home\|Home]]
