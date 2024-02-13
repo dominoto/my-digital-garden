@@ -1,0 +1,7 @@
+---
+{"dg-publish":true,"permalink":"/digital-garden/index/","title":"Homepage","tags":["gardenEntry"],"noteIcon":"","created":"2024-02-12","updated":"2024-02-13"}
+---
+
+Let us test if this is working.
+
+Link to [[Digital Garden/Random note\|Random note]]
