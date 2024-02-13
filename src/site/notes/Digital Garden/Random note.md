@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/random-note/","noteIcon":"","created":"2024-02-12","updated":"2024-02-12"}
+{"dg-publish":true,"permalink":"/digital-garden/random-note/","created":"2024-02-12","updated":"2024-02-12"}
 ---
 
 
