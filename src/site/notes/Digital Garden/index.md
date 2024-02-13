@@ -6,7 +6,7 @@ Let us test if this is working.
 
 Link to [[Digital Garden/Random note\|Random note]]
 # Proba 1
-Link to [[Digital Garden/Swapping Heroku with Render and fly.io for your full stack React app\|Swapping Heroku with Render and fly.io for your full stack React app]]
+Link to [[Digital Garden/Swapping Heroku with Render and fly.io for your full stack React app\|Swapping Heroku with Render and fly for your full stack React app]]
 ## Proba 2
 ### Proba 3
 #### Proba 4
