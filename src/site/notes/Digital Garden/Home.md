@@ -14,4 +14,4 @@ Link to [[Digital Garden/Deploying a React App with GitHub Pages, React Router, 
 ### Proba 3
 #### Proba 4
 [<img style="float:left" src="https://user-images.githubusercontent.com/14358394/115450238-f39e8100-a21b-11eb-89d0-fa4b82cdbce8.png" width="150">](https://ko-fi.com/dominoto)
-</div>
+</div></div>
