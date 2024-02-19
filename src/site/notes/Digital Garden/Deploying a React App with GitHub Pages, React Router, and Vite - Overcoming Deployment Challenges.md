@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/deploying-a-react-app-with-git-hub-pages-react-router-and-vite-overcoming-deployment-challenges/","created":"2024-02-13","updated":"2024-02-13"}
+{"dg-publish":true,"permalink":"/digital-garden/deploying-a-react-app-with-git-hub-pages-react-router-and-vite-overcoming-deployment-challenges/","created":"2024-02-13","updated":"2024-02-14"}
 ---
 
 ![](https://cdn-images-1.medium.com/max/800/1*xUdfKiWBFsJ3N9h7yKUBFA.png)
