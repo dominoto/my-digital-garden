@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/home/","title":"Homepage","contentClasses":"wideish","tags":["gardenEntry"],"created":"2024-02-12","updated":"2024-02-19"}
+{"dg-publish":true,"permalink":"/digital-garden/home/","title":"Homepage","contentClasses":"wide-page","tags":["gardenEntry"],"dgShowBacklinks":"false","created":"2024-02-12","updated":"2024-02-25"}
 ---
 
 <div class="homeContainer"><div class="homeColumn">
