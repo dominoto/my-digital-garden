@@ -26,40 +26,21 @@
 
   .gr_grid_book_container {
     /* customize book cover container div here */
-    /* float: left; */
-    width: 98px;
-    height: 160px;
     padding: 0px 0px;
     overflow: hidden;
-    border-radius: 5px;
     margin: 2px;
+  }
     
+  .gr_grid_book_container img {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 14px !important;
   }
 </style>
 
 <script src="https://www.goodreads.com/review/grid_widget/60415124.Currently%20reading?cover_size=medium&hide_link=true&hide_title=true&num_books=8&order=d&shelf=currently-reading&sort=date_updated&widget_id=1710370254" type="text/javascript" charset="utf-8"></script>
 
 ## Last read
-
-<style type="text/css" media="screen">
-  .gr_grid_container {
-    /* customize grid container div here. eg: width: 500px; */
-    display: flex;
-    flex-direction: row;
-  }
-
-  .gr_grid_book_container {
-    /* customize book cover container div here */
-    /* float: left; */
-    width: 98px;
-    height: 160px;
-    padding: 0px 0px;
-    overflow: hidden;
-    border-radius: 5px;
-    margin: 2px;
-    
-  }
-</style>
 
 <script src="https://www.goodreads.com/review/grid_widget/60415124.Domagoj's%20read%20book%20montage?cover_size=medium&hide_link=true&hide_title=true&num_books=8&order=d&shelf=read&sort=date_updated&widget_id=1710371440" type="text/javascript" charset="utf-8"></script>
 
