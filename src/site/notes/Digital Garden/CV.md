@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/cv/","title":"Curriculum Vitae","created":"2024-03-14","updated":"2024-03-14"}
+{"dg-publish":true,"permalink":"/digital-garden/cv/","title":"Curriculum Vitae","dgShowBacklinks":"true","dgShowToc":"false","created":"2024-03-14","updated":"2024-03-14"}
 ---
 
 
