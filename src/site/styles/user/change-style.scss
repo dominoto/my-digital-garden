@@ -1,7 +1,4 @@
-* {
-  max-width: none !important;
-}
-
+// Global styling -----------------------------------------------------------
 body {
   /***
       ADD YOUR CUSTOM STYLIING HERE. (INSIDE THE body {...} section.)
@@ -10,18 +7,23 @@ body {
   font-family: "Rubik", sans-serif !important;
   margin: 1rem;
 }
+
+* {
+  max-width: none !important;
+}
+
 a:link {
   text-decoration: none;
 }
-// @media screen and (min-width: 1024px) {
 
-// }
+// Container for content on Homepage ----------------------------------------
 .homeContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
+// Main content area --------------------------------------------------------
 .homeMain {
   flex-basis: calc(70% - 10px);
   /* Adjust the width and margins as needed */
@@ -29,12 +31,15 @@ a:link {
   /* Adjust the margin between columns */
 }
 
+// Sidebar area -------------------------------------------------------------
 .homeSidebar {
   flex-basis: calc(30% - 10px);
   /* Adjust the width and margins as needed */
   margin-bottom: 20px;
   /* Adjust the margin between columns */
 }
+
+// Font classes -------------------------------------------------------------
 .rubik-font {
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
