@@ -20,7 +20,6 @@ Projects:
 ## Professional Experience
 
 **Occupational Health and Safety Specialist** | 02/2021 – 08/2022 | Rijeka, Croatia
-
 **CENTAR ZAŠTITE NA RADU I ZAŠTITE OD POŽARA d.o.o.**
 
 - technical examinations of elements, installations and work equipment pertaining to occupational and fire safety
@@ -31,7 +30,6 @@ Projects:
 - certificate for Basics of Andragogy (EURO EDUKA ustanova za obrazovanje odraslih, Zagreb, Bolnička cesta 94)
 
 **Automation Engineer** | 01/2018 – 02/2020 | Rijeka, Croatia
-
 **PROTECH AUTOMATION d.o.o.**
 
 - developed software (PLC and SCADA programming) and graphical user interfaces (HMI design) for manufacturing and process control
