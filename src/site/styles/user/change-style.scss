@@ -1,0 +1,50 @@
+* {
+  max-width: none !important;
+}
+
+body {
+  /***
+      ADD YOUR CUSTOM STYLIING HERE. (INSIDE THE body {...} section.)
+      IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
+   ***/
+  font-family: "Rubik", sans-serif !important;
+  margin: 1rem;
+}
+a:link {
+  text-decoration: none;
+}
+// @media screen and (min-width: 1024px) {
+
+// }
+.homeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.homeMain {
+  flex-basis: calc(70% - 10px);
+  /* Adjust the width and margins as needed */
+  margin-bottom: 20px;
+  /* Adjust the margin between columns */
+}
+
+.homeSidebar {
+  flex-basis: calc(30% - 10px);
+  /* Adjust the width and margins as needed */
+  margin-bottom: 20px;
+  /* Adjust the margin between columns */
+}
+.rubik-font {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.jetbrains-mono-font {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
