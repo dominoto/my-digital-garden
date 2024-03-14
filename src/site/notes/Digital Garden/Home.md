@@ -1,7 +1,14 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/home/","title":"Homepage","contentClasses":"wide-page","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowToc":"false","created":"2024-02-12","updated":"2024-03-14"}
+{"dg-publish":true,"permalink":"/digital-garden/home/","title":"Homepage","contentClasses":"","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowToc":"false","created":"2024-02-12","updated":"2024-03-14"}
 ---
 
+
+<style>
+ * {
+ /* Override the default theme width just for homepage */
+  max-width: none !important;
+}
+</style>
 
 <div class="homeContainer">
 <div class="homeMain">
@@ -49,7 +56,7 @@
 
 ## Articles
 
-- [[Digital Garden/Swapping Heroku with Render and fly for your full stack React app\|Swapping Heroku with Render and fly for your full stack React app]]
+- [[Resources/Swapping Heroku with Render and fly for your full stack React app\|Swapping Heroku with Render and fly for your full stack React app]]
 - [[Resources/Deploying a React App with GitHub Pages, React Router, and Vite - Overcoming Deployment Challenges\|Deploying a React App with GitHub Pages, React Router, and Vite - Overcoming Deployment Challenges]]
 
 [<img style="float:left" src="https://user-images.githubusercontent.com/14358394/115450238-f39e8100-a21b-11eb-89d0-fa4b82cdbce8.png" width="150">](https://ko-fi.com/dominoto)
