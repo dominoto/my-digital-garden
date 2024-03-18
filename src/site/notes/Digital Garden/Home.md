@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/home/","title":"Homepage","contentClasses":"","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowToc":"false","created":"2024-02-12","updated":"2024-03-14"}
+{"dg-publish":true,"permalink":"/digital-garden/home/","title":"Homepage","contentClasses":"","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowToc":"false","created":"2024-02-12","updated":"2024-03-18"}
 ---
 
 
@@ -54,10 +54,32 @@
 </div>
 <div class="homeSidebar">
 
+## Topics
+
+- [[LM Studio\|LM Studio]]
+- [[Python\|Python]]
+- [[Resources/React\|React]]
+- [[Web Development\|Web Development]]
+
+{ .block-language-dataview}
+
 ## Articles
 
-- [[Resources/Swapping Heroku with Render and fly for your full stack React app\|Swapping Heroku with Render and fly for your full stack React app]]
 - [[Resources/Deploying a React App with GitHub Pages, React Router, and Vite - Overcoming Deployment Challenges\|Deploying a React App with GitHub Pages, React Router, and Vite - Overcoming Deployment Challenges]]
+- [[Resources/Swapping Heroku with Render and fly for your full stack React app\|Swapping Heroku with Render and fly for your full stack React app]]
+
+{ .block-language-dataview}
+
+[[Digital Garden/Articles\|More...]]
+
+## Notes
+
+- [[Resources/Failed to start server on port 1234\|Failed to start server on port 1234]]
+- [[Resources/Local HTTP server using Python\|Local HTTP server using Python]]
+
+{ .block-language-dataview}
+
+[[Digital Garden/Notes\|More...]]
 
 [<img style="float:left" src="https://user-images.githubusercontent.com/14358394/115450238-f39e8100-a21b-11eb-89d0-fa4b82cdbce8.png" width="150">](https://ko-fi.com/dominoto)
 
