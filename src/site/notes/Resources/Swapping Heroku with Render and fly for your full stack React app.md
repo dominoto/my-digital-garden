@@ -1,9 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/resources/swapping-heroku-with-render-and-fly-for-your-full-stack-react-app/","created":"2024-02-13","updated":"2024-03-14"}
+{"dg-publish":true,"permalink":"/resources/swapping-heroku-with-render-and-fly-for-your-full-stack-react-app/","created":"2024-02-13","updated":"2024-03-18"}
 ---
 
 
-Topics: [[Resources/React\|React]]
+**Topics:** ==[[Resources/React\|React]]==
 
 If you are following some tutorial for a project that still relies on Heroku which is not free anymore, and you want a free alternative, continue reading 🙂
 
@@ -165,3 +165,5 @@ Feel free to check the project that I used this procedure on:
 Front-end (using newer Clarifai REST API): [dominoto/smart-brain-hooks: Converting smartbrain frontend app from class to hooks (github.com)](https://github.com/dominoto/smart-brain-hooks)
 
 Back-end: [dominoto/smart-brain-api: Back-end part of final project for ZTM Web Dev course (github.com)](https://github.com/dominoto/smart-brain-api)
+
+If you found this helpful, feel free to [<img style="float:none" src="https://user-images.githubusercontent.com/14358394/115450238-f39e8100-a21b-11eb-89d0-fa4b82cdbce8.png" width="150">](https://ko-fi.com/dominoto) 🙂
