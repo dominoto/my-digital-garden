@@ -1,8 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/resources/deploying-a-react-app-with-git-hub-pages-react-router-and-vite-overcoming-deployment-challenges/","created":"2024-02-13","updated":"2024-02-14"}
+{"dg-publish":true,"permalink":"/resources/deploying-a-react-app-with-git-hub-pages-react-router-and-vite-overcoming-deployment-challenges/","created":"2024-02-13","updated":"2024-03-18"}
 ---
 
 ![](https://cdn-images-1.medium.com/max/800/1*xUdfKiWBFsJ3N9h7yKUBFA.png)
+
+**Topics:** ==[[Resources/React\|React]]==
 
 Deploying a React app involves several considerations, and when incorporating tools like React Router and Vite, additional challenges can arise. In this short (but sweet) article, I’ll share my experiences deploying a React app using GitHub Pages, focusing on overcoming a specific problem encountered during the process: getting a **blank page** on deployed site even though everything worked fine in development.
 
@@ -69,3 +71,5 @@ Reflecting on the challenges faced during deployment, it became evident that met
 ### Conclusion
 
 Deploying a React app to GitHub Pages involves more than a simple `npm deploy`. By addressing specific challenges related to configuration and routing, you can ensure a smooth deployment process. Remember to adapt these solutions to your own projects, and explore further resources to enhance your deployment skills.
+
+If you found this helpful, feel free to [<img style="float:none" src="https://user-images.githubusercontent.com/14358394/115450238-f39e8100-a21b-11eb-89d0-fa4b82cdbce8.png" width="150">](https://ko-fi.com/dominoto) 🙂
