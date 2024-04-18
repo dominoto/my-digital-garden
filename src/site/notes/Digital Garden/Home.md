@@ -56,9 +56,9 @@
 
 ## Topics
 
-- [[Android\|Android]]
 - [[LM Studio\|LM Studio]]
 - [[Python\|Python]]
+- [[Resources/Android\|Android]]
 - [[Resources/React\|React]]
 - [[Web Development\|Web Development]]
 
