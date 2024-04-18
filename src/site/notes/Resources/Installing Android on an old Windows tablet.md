@@ -68,8 +68,8 @@ On to the last candidate, Bliss OS.
 Bliss OS is an open-source operating system based on Android, designed to run on various devices such as Chromebooks, Windows/Linux PCs, and tablets. It offers a range of customization options and added security features. The OS is compatible with x86/x86_64 compatible CPUs and supports both BIOS/CSM and UEFI boot. Bliss OS allows users to switch between desktop and touch styles.
 
 Bliss OS offers three different Android versions: 11, 12L and 13. Feel free to try them all and see which one seems more performant. Also, test all the functionality because these devices are finnicky and can have some Bluetooth or WiFi problems with some OS builds. I opted for Bliss OS 14 (Android 11) since it seemed a bit easier on RAM. You can download them from SourceForge, links are on the [official site](https://blissos.org/index.html#download).
-The good: everything worked, solid performance, looks nice.
-The bad: nothing important.
+- The good: everything worked, solid performance, looks nice.
+- The bad: nothing important.
 
 ## Bliss OS installation
 
