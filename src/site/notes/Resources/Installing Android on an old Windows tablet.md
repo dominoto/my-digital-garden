@@ -3,7 +3,7 @@
 ---
 
 
-**Topics:** ==[[Android\|Android]]==
+**Topics:** ==[[Resources/Android\|Android]]==
 
 ## Introduction
 
