@@ -15,6 +15,8 @@
 
 **I'm an ex-Automation engineer who also worked as Occupational Health and Safety specialist located in Rijeka, Croatia.** Currently working in IT as an Application Support Specialist.
 
+Feel free to check my [[Digital Garden/CV\|CV]] and [[Digital Garden/Contact Me\|Contact Me]] if you’re interested in working together.
+
 <!-- Find out more in About Me. -->
 <!--
 > [!important] Currently seeking work
