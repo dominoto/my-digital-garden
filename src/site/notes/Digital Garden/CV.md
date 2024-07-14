@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/cv/","title":"Curriculum Vitae","dgShowBacklinks":"true","dgShowToc":"false","created":"2024-03-14","updated":"2024-03-14"}
+{"dg-publish":true,"permalink":"/digital-garden/cv/","title":"Curriculum Vitae","dgShowBacklinks":"true","dgShowToc":"false","created":"2024-03-14","updated":"2024-07-14"}
 ---
 
 
@@ -7,7 +7,7 @@
 
 [E-mail](mailto:dzubac@outlook.com) | [GitHub](https://github.com/dominoto)
 
-Former automation engineer looking to enter the world of IT development. Studied fundamental Python courses from [Stone River eLearning](https://stoneriverelearning.com/) and an Udemy course ([The Complete Web Developer in 2022: Zero to Mastery](https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/)) which covered HTML, CSS, Javascript and React. Finished the [Front-end Developer course](https://www.algebra.hr/cjelozivotno-obrazovanje/programi/front-end-developer/) at Algebra University College in Rijeka in May 2023.
+Former Automation Engineer who worked on projects in various industries (steel mills, car manufacturing, digital printing presses). Currently working in IT as an Application Support Specialist. Studied fundamental Python courses from [Stone River eLearning](https://stoneriverelearning.com/) and an Udemy course ([The Complete Web Developer in 2022: Zero to Mastery](https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/)) which covered HTML, CSS, Javascript and React. Finished the [Front-end Developer course](https://www.algebra.hr/cjelozivotno-obrazovanje/programi/front-end-developer/) at Algebra University College in Rijeka in May 2023.
 
 Projects:
 
@@ -19,6 +19,19 @@ Projects:
 
 ## Professional Experience
 
+**Application Support Specialist** | 05/2024 – now | Rijeka, Croatia
+**NetCom d.o.o.**
+
+- installation and implementation of software solutions
+- user support in application usage
+- user education for working with applications (either online or on-site)
+- installation of new software versions
+- testing of software solutions
+- error detection
+- involvement in analysis and design of applications
+- creation of user documentation
+- testing of application functionality
+
 **Occupational Health and Safety Specialist** | 02/2021 – 08/2022 | Rijeka, Croatia
 **CENTAR ZAŠTITE NA RADU I ZAŠTITE OD POŽARA d.o.o.**
 
@@ -26,7 +39,7 @@ Projects:
 - managed clients' employees training and development
 - scored clients' employees, held open communication, encouraged learning, provided constructive feedback
 - generated documentation and safety certificates
-- credential for Occup. Health and Safety Spec. (Croatian Ministry of Labour, Pension System, Family and Social Policy)
+- credential for Occup. Health and Safety Spec. (Croatian Ministry of Labour and Pension System, Family and Social Policy)
 - certificate for Basics of Andragogy (EURO EDUKA ustanova za obrazovanje odraslih, Zagreb, Bolnička cesta 94)
 
 **Automation Engineer** | 01/2018 – 02/2020 | Rijeka, Croatia

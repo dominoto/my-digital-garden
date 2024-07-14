@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/home/","title":"Homepage","contentClasses":"","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowToc":"false","created":"2024-02-12","updated":"2024-03-18"}
+{"dg-publish":true,"permalink":"/digital-garden/home/","title":"Homepage","contentClasses":"","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowToc":"false","created":"2024-02-12","updated":"2024-07-14"}
 ---
 
 
@@ -13,12 +13,13 @@
 <div class="homeContainer">
 <div class="homeMain">
 
-**I'm an ex-Automation engineer who also worked as Occupational Health and Safety specialist located in Rijeka, Croatia.** Currently trying to enter into the world of IT.
+**I'm an ex-Automation engineer who also worked as Occupational Health and Safety specialist located in Rijeka, Croatia.** Currently working in IT as an Application Support Specialist.
 
 <!-- Find out more in About Me. -->
-
+<!--
 > [!important] Currently seeking work
 > I'm currently seeking work as a JavaScript developer without experience. Please check my [[Digital Garden/CV\|CV]] and [[Digital Garden/Contact Me\|Contact Me]] if you’re interested in working together.
+-->
 
 **What is this site? 🤔** It's a kind of [Digital Garden](https://www.thunknotes.com/blog/what-is-a-digital-garden) that is also used as a portfolio. That means that the content can be unfinished and imperfect at first, but evolved with nurture over time.
 
