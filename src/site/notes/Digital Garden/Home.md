@@ -59,10 +59,10 @@ Feel free to check my [[Digital Garden/CV\|CV]] and [[Digital Garden/Contact Me\
 
 ## Topics
 
-- [[Gaming\|Gaming]]
 - [[LM Studio\|LM Studio]]
 - [[Python\|Python]]
 - [[Resources/Android\|Android]]
+- [[Resources/Gaming\|Gaming]]
 - [[Resources/React\|React]]
 - [[Web Development\|Web Development]]
 
@@ -70,6 +70,7 @@ Feel free to check my [[Digital Garden/CV\|CV]] and [[Digital Garden/Contact Me\
 
 ## Articles
 
+- [[Resources/Ghost of Tsushima crashing\|Ghost of Tsushima crashing]]
 - [[Resources/Installing Android on an old Windows tablet\|Installing Android on an old Windows tablet]]
 - [[Resources/Deploying a React App with GitHub Pages, React Router, and Vite - Overcoming Deployment Challenges\|Deploying a React App with GitHub Pages, React Router, and Vite - Overcoming Deployment Challenges]]
 - [[Resources/Swapping Heroku with Render and fly for your full stack React app\|Swapping Heroku with Render and fly for your full stack React app]]

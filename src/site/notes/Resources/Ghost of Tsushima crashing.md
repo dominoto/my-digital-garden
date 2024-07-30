@@ -3,7 +3,7 @@
 ---
 
 
-**Topics:** ==[[Gaming\|Gaming]]
+**Topics:** ==[[Resources/Gaming\|Gaming]]
 
 [Ghost of Tsushima](https://en.wikipedia.org/wiki/Ghost_of_Tsushima) is an action-adventure video game developed by Sucker Punch Productions and released in 2020 on consoles. It also released on PC in 2024, but with an annoying issue:
 
