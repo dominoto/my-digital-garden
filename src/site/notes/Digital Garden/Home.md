@@ -59,6 +59,7 @@ Feel free to check my [[Digital Garden/CV\|CV]] and [[Digital Garden/Contact Me\
 
 ## Topics
 
+- [[Gaming\|Gaming]]
 - [[LM Studio\|LM Studio]]
 - [[Python\|Python]]
 - [[Resources/Android\|Android]]
