@@ -5,6 +5,6 @@
 
 ## Articles and notes related to Gaming
 
-- [[Resources/Ghost of Tsushima crashing\|Ghost of Tsushima crashing]]
+- [[Resources/Ghost of Tsushima crashing with DXGI error\|Ghost of Tsushima crashing with DXGI error]]
 
 { .block-language-dataview}
