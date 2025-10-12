@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/resources/ghost-of-tsushima-crashing-with-dxgi-error/","created":"2024-07-30","updated":"2024-07-30"}
+{"dg-publish":true,"permalink":"/resources/ghost-of-tsushima-crashing-with-dxgi-error/","created":"2024-07-30","updated":"2025-10-12"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/home/","title":"Homepage","contentClasses":"","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowToc":"false","created":"2024-02-12","updated":"2024-07-14"}
+{"dg-publish":true,"permalink":"/digital-garden/home/","title":"Homepage","contentClasses":"","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowToc":"false","created":"2024-02-12","updated":"2025-10-12"}
 ---
 
 
@@ -13,7 +13,7 @@
 <div class="homeContainer">
 <div class="homeMain">
 
-**I'm an ex-Automation engineer who also worked as Occupational Health and Safety specialist located in Rijeka, Croatia.** Currently working in IT as an Application Support Specialist.
+**I'm an ex-Automation engineer who also worked as Occupational Health and Safety specialist located in Rijeka, Croatia.** Currently working in IT as a PHP/Laravel Developer and Application Support Specialist.
 
 Feel free to check my [[Digital Garden/CV\|CV]] and [[Digital Garden/Contact Me\|Contact Me]] if you’re interested in working together.
 
@@ -59,21 +59,27 @@ Feel free to check my [[Digital Garden/CV\|CV]] and [[Digital Garden/Contact Me\
 
 ## Topics
 
+<!--
 - [[LM Studio\|LM Studio]]
 - [[Python\|Python]]
 - [[Resources/Android\|Android]]
 - [[Resources/Gaming\|Gaming]]
+- [[Resources/Homelab\|Homelab]]
 - [[Resources/React\|React]]
 - [[Web Development\|Web Development]]
+
+{ .block-language-dataview}
+-->
+- [[Resources/Homelab\|Homelab]]
 
 { .block-language-dataview}
 
 ## Articles
 
 - [[Resources/Ghost of Tsushima crashing with DXGI error\|Ghost of Tsushima crashing with DXGI error]]
+- [[Resources/A Secure, Port-Free Homelab with Cloudflare Tunnels, Cosmos, and Split-DNS\|A Secure, Port-Free Homelab with Cloudflare Tunnels, Cosmos, and Split-DNS]]
 - [[Resources/Installing Android on an old Windows tablet\|Installing Android on an old Windows tablet]]
 - [[Resources/Deploying a React App with GitHub Pages, React Router, and Vite - Overcoming Deployment Challenges\|Deploying a React App with GitHub Pages, React Router, and Vite - Overcoming Deployment Challenges]]
-- [[Resources/Swapping Heroku with Render and fly for your full stack React app\|Swapping Heroku with Render and fly for your full stack React app]]
 
 { .block-language-dataview}
 
@@ -81,8 +87,8 @@ Feel free to check my [[Digital Garden/CV\|CV]] and [[Digital Garden/Contact Me\
 
 ## Notes
 
-- [[Resources/Failed to start server on port 1234\|Failed to start server on port 1234]]
 - [[Resources/Local HTTP server using Python\|Local HTTP server using Python]]
+- [[Resources/Failed to start server on port 1234\|Failed to start server on port 1234]]
 
 { .block-language-dataview}
 

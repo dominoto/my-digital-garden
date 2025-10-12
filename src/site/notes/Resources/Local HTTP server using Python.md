@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/resources/local-http-server-using-python/","created":"2024-03-02","updated":"2024-03-18"}
+{"dg-publish":true,"permalink":"/resources/local-http-server-using-python/","created":"2024-03-02","updated":"2025-10-12"}
 ---
 
 ## How to run a local HTTP server using Python to check your website functionality easily

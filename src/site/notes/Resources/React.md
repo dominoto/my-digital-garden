@@ -1,7 +1,6 @@
 ---
-{"dg-publish":true,"permalink":"/resources/react/","dgShowBacklinks":"false","dgShowToc":"false","created":"2024-03-18","updated":"2024-03-18"}
+{"dg-publish":true,"permalink":"/resources/react/","dgShowBacklinks":"false","dgShowToc":"false","created":"2024-03-18","updated":"2025-10-12"}
 ---
-
 
 ## Articles and notes related to React
 

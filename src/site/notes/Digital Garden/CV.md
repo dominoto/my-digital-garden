@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/cv/","title":"Curriculum Vitae","dgShowBacklinks":"true","dgShowToc":"false","created":"2024-03-14","updated":"2024-07-14"}
+{"dg-publish":true,"permalink":"/digital-garden/cv/","title":"Curriculum Vitae","dgShowBacklinks":"true","dgShowToc":"false","created":"2024-03-14","updated":"2025-10-12"}
 ---
 
 
@@ -7,7 +7,7 @@
 
 [E-mail](mailto:dzubac@outlook.com) | [GitHub](https://github.com/dominoto)
 
-Former Automation Engineer who worked on projects in various industries (steel mills, car manufacturing, digital printing presses). Currently working in IT as an Application Support Specialist. Studied fundamental Python courses from [Stone River eLearning](https://stoneriverelearning.com/) and an Udemy course ([The Complete Web Developer in 2022: Zero to Mastery](https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/)) which covered HTML, CSS, Javascript and React. Finished the [Front-end Developer course](https://www.algebra.hr/cjelozivotno-obrazovanje/programi/front-end-developer/) at Algebra University College in Rijeka in May 2023.
+Former Automation Engineer who worked on projects in various industries (steel mills, car manufacturing, digital printing presses). Currently working in IT as a PHP/Laravel Developer and Application Support Specialist. Studied fundamental Python courses from [Stone River eLearning](https://stoneriverelearning.com/) and an Udemy course ([The Complete Web Developer in 2022: Zero to Mastery](https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/)) which covered HTML, CSS, Javascript and React. Finished the [Front-end Developer course](https://www.algebra.hr/cjelozivotno-obrazovanje/programi/front-end-developer/) at Algebra University College in Rijeka in May 2023.
 
 Projects:
 

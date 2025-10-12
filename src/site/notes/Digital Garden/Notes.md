@@ -5,7 +5,7 @@
 
 ## List of my Notes
 
-- [[Resources/Failed to start server on port 1234\|Failed to start server on port 1234]]
 - [[Resources/Local HTTP server using Python\|Local HTTP server using Python]]
+- [[Resources/Failed to start server on port 1234\|Failed to start server on port 1234]]
 
 { .block-language-dataview}

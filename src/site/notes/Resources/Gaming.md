@@ -1,7 +1,6 @@
 ---
-{"dg-publish":true,"permalink":"/resources/gaming/","dgShowBacklinks":"false","dgShowToc":"false","created":"2024-07-30","updated":"2024-07-30"}
+{"dg-publish":true,"permalink":"/resources/gaming/","dgShowBacklinks":"false","dgShowToc":"false","created":"2024-07-30","updated":"2025-10-12"}
 ---
-
 
 ## Articles and notes related to Gaming
 
