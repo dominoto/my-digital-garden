@@ -70,14 +70,17 @@ Feel free to check my [[Digital Garden/CV\|CV]] and [[Digital Garden/Contact Me\
 
 { .block-language-dataview}
 -->
+- [[Resources/Android\|Android]]
+- [[Resources/Gaming\|Gaming]]
 - [[Resources/Homelab\|Homelab]]
+- [[Resources/React\|React]]
 
 { .block-language-dataview}
 
 ## Articles
 
-- [[Resources/Ghost of Tsushima crashing with DXGI error\|Ghost of Tsushima crashing with DXGI error]]
 - [[Resources/A Secure, Port-Free Homelab with Cloudflare Tunnels, Cosmos, and Split-DNS\|A Secure, Port-Free Homelab with Cloudflare Tunnels, Cosmos, and Split-DNS]]
+- [[Resources/Ghost of Tsushima crashing with DXGI error\|Ghost of Tsushima crashing with DXGI error]]
 - [[Resources/Installing Android on an old Windows tablet\|Installing Android on an old Windows tablet]]
 - [[Resources/Deploying a React App with GitHub Pages, React Router, and Vite - Overcoming Deployment Challenges\|Deploying a React App with GitHub Pages, React Router, and Vite - Overcoming Deployment Challenges]]
 
