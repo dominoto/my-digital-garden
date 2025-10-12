@@ -77,6 +77,8 @@ Feel free to check my [[Digital Garden/CV\|CV]] and [[Digital Garden/Contact Me\
 
 { .block-language-dataview}
 
+[[Digital Garden/Topics\|More...]]
+
 ## Articles
 
 - [[Resources/A Secure, Port-Free Homelab with Cloudflare Tunnels, Cosmos, and Split-DNS\|A Secure, Port-Free Homelab with Cloudflare Tunnels, Cosmos, and Split-DNS]]
