@@ -18,7 +18,7 @@ const matterOptions = {
 const faviconsPlugin = require("eleventy-plugin-gen-favicons");
 const normalizeFavicon = require("./src/site/normalize-favicon.js");
 
-const FAVICON_SOURCE = "./src/site/favicon.png";
+const FAVICON_SOURCE = "./src/site/favicon.svg";
 const FAVICON_NORMALIZED = "./.cache/favicon.normalized.svg";
 normalizeFavicon(FAVICON_SOURCE, FAVICON_NORMALIZED);
 const tocPlugin = require("eleventy-plugin-nesting-toc");
