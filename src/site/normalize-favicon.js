@@ -4,12 +4,12 @@ const path = require("path");
 const MAX_DIM = 512;
 
 function normalizeFavicon(inputPath, outputPath) {
-  const content = fs.readFileSync(inputPath, "utf8");
-
+  const rawBuffer = fs.readFileSync(inputPath);
+  const content = rawBuffer.toString("utf8");
   const svgTagMatch = content.match(/<svg\b[^>]*>/i);
   if (!svgTagMatch) {
     fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-    fs.writeFileSync(outputPath, content);
+    fs.writeFileSync(outputPath, rawBuffer); // write binary buffer, not corrupted string
     return;
   }
 
@@ -27,8 +27,14 @@ function normalizeFavicon(inputPath, outputPath) {
   let effectiveWidth = parseDim(widthMatch && widthMatch[1]);
   let effectiveHeight = parseDim(heightMatch && heightMatch[1]);
 
-  if ((!isFinite(effectiveWidth) || !isFinite(effectiveHeight)) && viewBoxMatch) {
-    const vb = viewBoxMatch[1].trim().split(/[\s,]+/).map(parseFloat);
+  if (
+    (!isFinite(effectiveWidth) || !isFinite(effectiveHeight)) &&
+    viewBoxMatch
+  ) {
+    const vb = viewBoxMatch[1]
+      .trim()
+      .split(/[\s,]+/)
+      .map(parseFloat);
     if (vb.length === 4) {
       if (!isFinite(effectiveWidth)) effectiveWidth = vb[2];
       if (!isFinite(effectiveHeight)) effectiveHeight = vb[3];
@@ -53,17 +59,23 @@ function normalizeFavicon(inputPath, outputPath) {
   if (!viewBoxMatch) {
     newSvgTag = newSvgTag.replace(
       /<svg\b/i,
-      `<svg viewBox="0 0 ${effectiveWidth} ${effectiveHeight}"`
+      `<svg viewBox="0 0 ${effectiveWidth} ${effectiveHeight}"`,
     );
   }
 
   if (widthMatch) {
-    newSvgTag = newSvgTag.replace(/\bwidth\s*=\s*"[^"]+"/i, `width="${newWidth}"`);
+    newSvgTag = newSvgTag.replace(
+      /\bwidth\s*=\s*"[^"]+"/i,
+      `width="${newWidth}"`,
+    );
   } else {
     newSvgTag = newSvgTag.replace(/<svg\b/i, `<svg width="${newWidth}"`);
   }
   if (heightMatch) {
-    newSvgTag = newSvgTag.replace(/\bheight\s*=\s*"[^"]+"/i, `height="${newHeight}"`);
+    newSvgTag = newSvgTag.replace(
+      /\bheight\s*=\s*"[^"]+"/i,
+      `height="${newHeight}"`,
+    );
   } else {
     newSvgTag = newSvgTag.replace(/<svg\b/i, `<svg height="${newHeight}"`);
   }
