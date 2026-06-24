@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/resources/failed-to-start-server-on-port-1234/","created":"2024-01-21","updated":"2024-03-18"}
+{"dg-publish":true,"permalink":"/resources/failed-to-start-server-on-port-1234/","created":"2024-01-21","updated":"2024-03-18","dg-note-properties":{"type":["Note"],"topics":["[[LM Studio\|LM Studio]]"],"tags":null,"created":"2024-01-21","modified":"2024-03-18","author":["Domagoj Zubac"]}}
 ---
 
 

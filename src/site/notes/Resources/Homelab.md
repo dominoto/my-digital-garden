@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/resources/homelab/","dgShowBacklinks":"false","dgShowToc":"false","created":"2025-10-12","updated":"2025-10-12"}
+{"dg-publish":true,"permalink":"/resources/homelab/","dgShowBacklinks":"false","dgShowToc":"false","created":"2025-10-12","updated":"2025-10-12","dg-note-properties":{"type":["Topic"],"created":"2025-10-12","modified":"2025-10-12"}}
 ---
 
 

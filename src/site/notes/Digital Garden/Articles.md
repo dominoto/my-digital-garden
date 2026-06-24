@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/articles/","dgShowBacklinks":"false","dgShowToc":"false","created":"2024-03-18","updated":"2024-04-18"}
+{"dg-publish":true,"permalink":"/digital-garden/articles/","dgShowBacklinks":"false","dgShowToc":"false","created":"2024-03-18","updated":"2024-04-18","dg-note-properties":{"type":["Object"],"topics":null,"tags":null,"created":"2024-03-18","modified":"2024-04-18"}}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/resources/android/","dgShowBacklinks":"false","dgShowToc":"false","created":"2024-04-18","updated":"2025-10-12"}
+{"dg-publish":true,"permalink":"/resources/android/","dgShowBacklinks":"false","dgShowToc":"false","created":"2024-04-18","updated":"2025-10-12","dg-note-properties":{"type":["Topic"],"topics":null,"tags":null,"created":"2024-04-18","modified":"2025-10-12"}}
 ---
 
 ## Articles and notes related to Android

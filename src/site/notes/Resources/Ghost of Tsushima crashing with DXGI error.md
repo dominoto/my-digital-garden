@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/resources/ghost-of-tsushima-crashing-with-dxgi-error/","created":"2024-07-30","updated":"2025-10-12"}
+{"dg-publish":true,"permalink":"/resources/ghost-of-tsushima-crashing-with-dxgi-error/","created":"2024-07-30","updated":"2025-10-12","dg-note-properties":{"type":["Article"],"topics":["[[Gaming]]"],"tags":null,"created":"2024-07-30","modified":"2025-10-12","author":["Domagoj Zubac"]}}
 ---
 
 

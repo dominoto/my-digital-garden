@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/resources/deploying-a-react-app-with-git-hub-pages-react-router-and-vite-overcoming-deployment-challenges/","created":"2024-02-13","updated":"2024-03-18"}
+{"dg-publish":true,"permalink":"/resources/deploying-a-react-app-with-git-hub-pages-react-router-and-vite-overcoming-deployment-challenges/","created":"2024-02-13","updated":"2024-03-18","dg-note-properties":{"created":"2024-02-13","modified":"2024-03-18","type":["Article"],"author":["Domagoj Zubac"],"topics":["[[React]]"]}}
 ---
 
 ![](https://cdn-images-1.medium.com/max/800/1*xUdfKiWBFsJ3N9h7yKUBFA.png)

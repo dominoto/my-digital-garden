@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/resources/swapping-heroku-with-render-and-fly-for-your-full-stack-react-app/","created":"2024-02-13","updated":"2024-03-18"}
+{"dg-publish":true,"permalink":"/resources/swapping-heroku-with-render-and-fly-for-your-full-stack-react-app/","created":"2024-02-13","updated":"2024-03-18","dg-note-properties":{"created":"2024-02-13","modified":"2024-03-18","type":["Article"],"author":["Domagoj Zubac"],"tags":null,"topics":["[[React]]"],"aliases":null}}
 ---
 
 

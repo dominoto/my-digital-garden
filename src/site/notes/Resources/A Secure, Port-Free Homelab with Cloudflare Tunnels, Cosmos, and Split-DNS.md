@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/resources/a-secure-port-free-homelab-with-cloudflare-tunnels-cosmos-and-split-dns/","created":"2024-07-30","updated":"2025-10-12"}
+{"dg-publish":true,"permalink":"/resources/a-secure-port-free-homelab-with-cloudflare-tunnels-cosmos-and-split-dns/","created":"2024-07-30","updated":"2025-10-12","dg-note-properties":{"type":["Article"],"topics":["[[Homelab]]"],"tags":null,"created":"2024-07-30","modified":"2025-10-12","author":["Domagoj Zubac"]}}
 ---
 
 

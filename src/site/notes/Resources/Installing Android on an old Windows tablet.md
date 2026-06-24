@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/resources/installing-android-on-an-old-windows-tablet/","created":"2024-04-18","updated":"2024-04-18"}
+{"dg-publish":true,"permalink":"/resources/installing-android-on-an-old-windows-tablet/","created":"2024-04-18","updated":"2024-04-18","dg-note-properties":{"type":["Article"],"topics":["[[Android]]"],"tags":null,"created":"2024-04-18","modified":"2024-04-18","author":["Domagoj Zubac"],"aliases":null}}
 ---
 
 

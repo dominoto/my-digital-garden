@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/home/","title":"Homepage","contentClasses":"","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowToc":"false","created":"2024-02-12","updated":"2025-10-12"}
+{"dg-publish":true,"permalink":"/digital-garden/home/","title":"Homepage","contentClasses":"","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowToc":"false","created":"2024-02-12","updated":"2025-10-12","dg-note-properties":{"permalink":"/digital-garden/home/","title":"Homepage","cssclasses":[],"tags":["gardenEntry"],"created":"2024-02-12","modified":"2025-10-12"}}
 ---
 
 
