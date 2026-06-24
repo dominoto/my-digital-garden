@@ -1,5 +1,5 @@
 diff --git a/node_modules/eleventy-plugin-gen-favicons/favicon-gen.js b/node_modules/eleventy-plugin-gen-favicons/favicon-gen.js
-index 10ef1f8..b97ce3f 100644
+index 10ef1f8..bc3340f 100644
 --- a/node_modules/eleventy-plugin-gen-favicons/favicon-gen.js
 +++ b/node_modules/eleventy-plugin-gen-favicons/favicon-gen.js
 @@ -30,7 +30,7 @@ const cacheByFile = {};
@@ -11,12 +11,42 @@ index 10ef1f8..b97ce3f 100644
    return sharp(fileName, opts).resize(newDim, newDim).png();
  };
  
-@@ -72,7 +72,7 @@ module.exports = async (srcFile, outputDir, opts) => {
+@@ -72,7 +72,22 @@ module.exports = async (srcFile, outputDir, opts) => {
    const mtime = (await fsp.stat(srcFile)).mtime;
    const [cachedMtime, cachedOpts] = cacheByFile[`${srcFile}|${outputDir}`] || [0, {}];
  
 -  const srcMetadata = await sharp(srcFile).metadata();
-+  const srcMetadata = await sharp(srcFile, {failOn: 'none'}).png().metadata();
++  let processFile = srcFile;
++  try {
++    const rawMeta = await sharp(srcFile, {failOn: 'none'}).metadata();
++    if (rawMeta.format === 'svg' || !rawMeta.format) {
++      const pngBuf = await sharp(srcFile, {failOn: 'none', density: 300})
++        .resize(512, 512)
++        .png()
++        .toBuffer();
++      processFile = srcFile + '.converted.png';
++      await fsp.writeFile(processFile, pngBuf);
++    }
++  } catch(e) {
++    // SVG conversion failed, processFile stays as srcFile
++  }
++  const srcMetadata = await sharp(processFile).metadata();
++
    const srcIsSvg = srcMetadata.format === 'svg';
  
    const {width, height} = srcMetadata;
+@@ -89,10 +104,10 @@ module.exports = async (srcFile, outputDir, opts) => {
+     }
+ 
+     await Promise.all([
+-      icoBuf(srcFile, srcMetadata).then(writeTo(destIco)),
+-      appleBuf(appleIconBgColor, appleIconPadding)(srcFile, srcMetadata).then(writeTo(destApple)),
+-      resizedSharp(srcFile, srcMetadata, googleHomeSize).then((s) => s.toBuffer()).then(writeTo(destGoogleHome)),
+-      resizedSharp(srcFile, srcMetadata, googleLoadSize).then((s) => s.toBuffer()).then(writeTo(destGoogleLoading)),
++      icoBuf(processFile, srcMetadata).then(writeTo(destIco)),
++      appleBuf(appleIconBgColor, appleIconPadding)(processFile, srcMetadata).then(writeTo(destApple)),
++      resizedSharp(processFile, srcMetadata, googleHomeSize).then((s) => s.toBuffer()).then(writeTo(destGoogleHome)),
++      resizedSharp(processFile, srcMetadata, googleLoadSize).then((s) => s.toBuffer()).then(writeTo(destGoogleLoading)),
+     ]);
+ 
+     if (generateManifest) {
