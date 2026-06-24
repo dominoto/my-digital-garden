@@ -20,8 +20,8 @@ const matterOptions = {
 const faviconsPlugin = require("eleventy-plugin-gen-favicons");
 const normalizeFavicon = require("./src/site/normalize-favicon.js");
 
-const FAVICON_SOURCE = "./src/site/favicon.svg";
-const FAVICON_NORMALIZED = "./.cache/favicon.normalized.svg";
+const FAVICON_SOURCE = "./src/site/favicon.png";
+const FAVICON_NORMALIZED = "./.cache/favicon.normalized.png";
 normalizeFavicon(FAVICON_SOURCE, FAVICON_NORMALIZED);
 const tocPlugin = require("eleventy-plugin-nesting-toc");
 const { parse } = require("node-html-parser");
