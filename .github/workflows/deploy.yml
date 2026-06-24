@@ -18,17 +18,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    
+
     - name: Install system dependencies for sharp SVG support
       run: sudo apt-get install -y librsvg2-dev
 
     - name: Setup Pages
       uses: actions/configure-pages@v5
 
-    - name: Use Node.js 20
-      uses: actions/setup-node@v3
+    - name: Use Node.js 24
+      uses: actions/setup-node@v6
       with:
-        node-version: 20
+        node-version: 24
         cache: 'npm'
 
     - run: npm install
