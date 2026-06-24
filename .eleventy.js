@@ -15,7 +15,7 @@ const matterOptions = {
     },
   },
 };
-const faviconsPlugin = require("eleventy-plugin-gen-favicons");
+//const faviconsPlugin = require("eleventy-plugin-gen-favicons");
 const normalizeFavicon = require("./src/site/normalize-favicon.js");
 
 const FAVICON_SOURCE = "./src/site/favicon.svg";
