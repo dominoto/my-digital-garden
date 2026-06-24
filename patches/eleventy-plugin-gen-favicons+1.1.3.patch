@@ -1,0 +1,13 @@
+diff --git a/node_modules/eleventy-plugin-gen-favicons/favicon-gen.js b/node_modules/eleventy-plugin-gen-favicons/favicon-gen.js
+index 10ef1f8..e8806f0 100644
+--- a/node_modules/eleventy-plugin-gen-favicons/favicon-gen.js
++++ b/node_modules/eleventy-plugin-gen-favicons/favicon-gen.js
+@@ -30,7 +30,7 @@ const cacheByFile = {};
+ 
+ // expects square img
+ const resizedSharp = async (fileName, fileMeta, newDim) => {
+-  const opts = fileMeta.density ? {density: (newDim / fileMeta.width) * fileMeta.density} : {};
++  const opts = fileMeta.density ? {density: Math.max(72,(newDim / fileMeta.width) * fileMeta.density)} : {};
+   return sharp(fileName, opts).resize(newDim, newDim).png();
+ };
+ 
