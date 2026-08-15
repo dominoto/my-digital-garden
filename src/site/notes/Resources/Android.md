@@ -7,22 +7,3 @@
 - [[Resources/Installing Android on an old Windows tablet\|Installing Android on an old Windows tablet]]
 
 { .block-language-dataview}
-
-```base
-views:
-  - type: table
-    name: Table
-    filters:
-      and:
-        - topics == ["[[Android]]"]
-    order:
-      - file.name
-  - type: list
-    name: View
-    filters:
-      and:
-        - topics == ["[[Android]]"]
-    markers: bullet
-
-```
-
