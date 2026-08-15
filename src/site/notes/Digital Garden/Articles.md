@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/articles/","dgShowBacklinks":"false","dgShowToc":"false","created":"2024-03-18","updated":"2026-06-28","dg-note-properties":{"type":["Object"],"topics":null,"tags":null,"created":"2024-03-18","modified":"2026-06-28"}}
+{"dg-publish":true,"permalink":"/digital-garden/articles/","dgShowBacklinks":"false","dgShowToc":"false","created":"2024-03-18","updated":"2026-08-15","dg-note-properties":{"type":["Object"],"topics":null,"tags":null,"created":"2024-03-18","modified":"2026-08-15"}}
 ---
 
 
@@ -13,3 +13,17 @@
 - [[Resources/Swapping Heroku with Render and fly for your full stack React app\|Swapping Heroku with Render and fly for your full stack React app]]
 
 { .block-language-dataview}
+
+
+```base
+views:
+  - type: list
+    name: Table
+    filters:
+      and:
+        - note["dg-publish"] == true
+        - author == ["Domagoj Zubac"]
+        - type == ["Article"]
+
+```
+
