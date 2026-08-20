@@ -11,13 +11,6 @@
 
 ```base
 views:
-  - type: table
-    name: Table
-    filters:
-      and:
-        - topics == ["[[Android]]"]
-    order:
-      - file.name
   - type: list
     name: View
     filters:
