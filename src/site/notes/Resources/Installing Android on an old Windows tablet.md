@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/resources/installing-android-on-an-old-windows-tablet/","created":"2024-04-18","updated":"2024-04-18","dg-note-properties":{"type":["Article"],"topics":["[[Resources/Android]]"],"tags":null,"created":"2024-04-18","modified":"2024-04-18","author":["Domagoj Zubac"],"aliases":null}}
+{"dg-publish":true,"permalink":"/resources/installing-android-on-an-old-windows-tablet/","created":"2024-04-18","updated":"2026-08-20","dg-note-properties":{"type":["Article"],"topics":["[[Resources/Android]]"],"tags":null,"created":"2024-04-18","modified":"2026-08-20","author":["Domagoj Zubac"],"aliases":null}}
 ---
 
 
@@ -78,6 +78,9 @@ The installation procedure is as follows:
 2. Make a bootable USB stick
 3. Install from bootable USB stick according to [this guide](https://docs.blissos.org/installation/install-from-bootable-usb/)
 4. Remove USB stick so you can boot into Bliss OS
+
+
+If you found this helpful, feel free to [<img style="float:none" src="https://user-images.githubusercontent.com/14358394/115450238-f39e8100-a21b-11eb-89d0-fa4b82cdbce8.png" width="150">](https://ko-fi.com/dominoto) 🙂
 
 ---
 Sources:

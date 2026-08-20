@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/resources/a-secure-port-free-homelab-with-cloudflare-tunnels-cosmos-and-split-dns/","created":"2024-07-30","updated":"2025-10-12","dg-note-properties":{"type":["Article"],"topics":["[[Resources/Homelab]]"],"tags":null,"created":"2024-07-30","modified":"2025-10-12","author":["Domagoj Zubac"]}}
+{"dg-publish":true,"permalink":"/resources/a-secure-port-free-homelab-with-cloudflare-tunnels-cosmos-and-split-dns/","created":"2024-07-30","updated":"2026-08-20","dg-note-properties":{"type":["Article"],"topics":["[[Resources/Homelab]]"],"tags":null,"created":"2024-07-30","modified":"2026-08-20","author":["Domagoj Zubac"]}}
 ---
 
 
@@ -164,3 +164,7 @@ This guide provides a comprehensive walkthrough for setting up a secure, self-ho
 *   **Snag: Total DNS Failure (Timeouts) for All Devices**
     *   **Cause:** The Docker networking layer is broken, likely because the `nftables` service was restarted from the command line.
     *   **Solution:** SSH into OMV and run `sudo systemctl restart docker`. Then, follow the Golden Rule from Part 5.
+
+---
+
+If you found this helpful, feel free to [<img style="float:none" src="https://user-images.githubusercontent.com/14358394/115450238-f39e8100-a21b-11eb-89d0-fa4b82cdbce8.png" width="150">](https://ko-fi.com/dominoto) 🙂

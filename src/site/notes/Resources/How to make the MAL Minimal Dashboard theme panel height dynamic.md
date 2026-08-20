@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/resources/how-to-make-the-mal-minimal-dashboard-theme-panel-height-dynamic/","created":"2026-06-25","updated":"2026-06-25","dg-note-properties":{"type":["Article"],"topics":["[[Web Development]]","[[CSS]]","[[MyAnimeList]]"],"tags":null,"created":"2026-06-25","modified":"2026-06-25","author":["Domagoj Zubac"]}}
+{"dg-publish":true,"permalink":"/resources/how-to-make-the-mal-minimal-dashboard-theme-panel-height-dynamic/","created":"2026-06-25","updated":"2026-08-20","dg-note-properties":{"type":["Article"],"topics":["[[Web Development]]","[[CSS]]","[[MyAnimeList]]"],"tags":null,"created":"2026-06-25","modified":"2026-08-20","author":["Domagoj Zubac"]}}
 ---
 
 
@@ -72,3 +72,5 @@ footer {
 ## Why this works
 
 CSS viewport units (`vh`) are relative to the browser window height and recalculate automatically on resize. By assigning `--panel-bottom` once in `:root`, all three layout rules that previously held separate hardcoded copies of `609px` now read from the same source, so they always stay in sync.
+
+If you found this helpful, feel free to [<img style="float:none" src="https://user-images.githubusercontent.com/14358394/115450238-f39e8100-a21b-11eb-89d0-fa4b82cdbce8.png" width="150">](https://ko-fi.com/dominoto) 🙂
