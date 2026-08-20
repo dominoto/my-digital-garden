@@ -24,5 +24,6 @@ views:
       and:
         - topics == ["[[Android]]"]
     markers: bullet
+    indentProperties: true
 
 ```
