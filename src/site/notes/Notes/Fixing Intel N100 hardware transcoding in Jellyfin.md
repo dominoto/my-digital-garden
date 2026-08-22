@@ -5,7 +5,7 @@
 
 A debugging session that started as "can I squeeze a bit more out of QuickSync?" and turned out to be "my iGPU has been completely dead this whole time."
 
-**TL;DR** — On Debian 13 (Trixie) the i915 firmware blobs moved out of `firmware-misc-nonfree` into a new package called **`firmware-intel-graphics`**. Without them, i915 fails to load GuC firmware and *wedges the GPU entirely* on Alder Lake-N. No hardware decode, no hardware encode, silent fallback to software.
+**TL;DR:** On Debian 13 (Trixie) the i915 firmware blobs moved out of `firmware-misc-nonfree` into a new package called **`firmware-intel-graphics`**. Without them, i915 fails to load GuC firmware and *wedges the GPU entirely* on Alder Lake-N. No hardware decode, no hardware encode, silent fallback to software.
 
 ---
 
@@ -23,7 +23,7 @@ HuC firmware: i915/tgl_huc.bin
         status: ERROR
 ```
 
-`MISSING` with `0 bytes` means the firmware file isn't on disk. HuC shows `ERROR` as a knock-on effect — it can't be authenticated without GuC.
+`MISSING` with `0 bytes` means the firmware file isn't on disk. HuC shows `ERROR` as a knock-on effect: it can't be authenticated without GuC.
 
 The kernel log tells the fuller story:
 
@@ -34,7 +34,7 @@ i915 0000:00:02.0: [drm] *ERROR* GT0: Enabling uc failed (-5)
 i915 0000:00:02.0: [drm] *ERROR* GT0: Failed to initialize GPU, declaring it wedged!
 ```
 
-That last line is the important one. On modern kernels GuC submission isn't optional for Alder Lake-N — if the firmware fetch fails, i915 gives up on the GPU completely.
+That last line is the important one. On modern kernels GuC submission isn't optional for Alder Lake-N. If the firmware fetch fails, i915 gives up on the GPU completely.
 
 ### Why `tgl_` on an N100?
 
@@ -103,7 +103,7 @@ A healthy boot looks like:
 [drm] GT0: GUC: RC enabled
 ```
 
-No `wedged` line. `SLPC` and `RC` are GuC-managed power and render-clock control — nice side benefits.
+No `wedged` line. `SLPC` and `RC` are GuC-managed power and render-clock control, nice side benefits.
 
 > **Note:** `firmware-intel-graphics` also carries `adlp_dmc.bin` (display microcontroller). Missing DMC disables runtime power management, which matters for idle wattage on an always-on box.
 
@@ -113,8 +113,8 @@ No `wedged` line. `SLPC` and `RC` are GuC-managed power and render-clock control
 
 | | Role | Why you care |
 |---|---|---|
-| **GuC** | Graphics micro-controller — command submission scheduling, power management (SLPC) | On ADL-N it's *mandatory*; without it the GPU won't initialise |
-| **HuC** | HEVC/H.264 micro-controller — hardware bitrate control for the low-power encode path | Enables `-low_power 1` and `-mbbrc 1`; without it, VBR silently degrades toward constant-QP |
+| **GuC** | Graphics micro-controller: command submission scheduling, power management (SLPC) | On ADL-N it's *mandatory*; without it the GPU won't initialise |
+| **HuC** | HEVC/H.264 micro-controller: hardware bitrate control for the low-power encode path | Enables `-low_power 1` and `-mbbrc 1`; without it, VBR silently degrades toward constant-QP |
 | **DMC** | Display micro-controller | Runtime power management for the display engine |
 
 HuC is the one that affects encode *quality*. GuC is the one that affects whether anything works at all.
@@ -133,7 +133,7 @@ docker exec <container> vainfo
 You need:
 
 - `/dev/dri` passed into the container
-- The container user in the `render` group — **the GID often differs between host and image**, which is the classic reason hardware transcoding stays broken when the host looks perfect
+- The container user in the `render` group. **The GID often differs between host and image**, which is the classic reason hardware transcoding stays broken when the host looks perfect
 
 ### OpenCL for tone mapping
 
@@ -165,19 +165,19 @@ Then recreate the container.
 | Enable hardware encoding | ✅ | |
 | Intel Low-Power H.264 encoder | ✅ | Safe once HuC is authenticated |
 | Intel Low-Power HEVC encoder | ✅ | Gen12 VDEnc HEVC supports B-frames |
-| Enable Tone mapping | ✅ | OpenCL path — needs the Docker mod above |
+| Enable Tone mapping | ✅ | OpenCL path; needs the Docker mod above |
 | Enable VPP Tone mapping | ❌ | Fixed-function fallback; takes precedence if both are on |
 | Tone mapping algorithm | BT.2390 | Recommended default |
 | Tone mapping peak | 100 | Means 1000 nits. Describes the **source**, not your display |
-| Encoding preset | `slower` | Fixed-function encoder — costs almost nothing on QSV |
+| Encoding preset | `slower` | Fixed-function encoder; costs almost nothing on QSV |
 | Segment length | 3 s | See below |
 
 ### Don't set segment length to 1
 
 HLS needs a keyframe at every segment boundary, so Jellyfin derives the GOP from segment length. At 24 fps:
 
-- `-hls_time 3` → `-g 72` — sensible
-- `-hls_time 1` → `-g 24` — a keyframe **every second**, which eats a large fraction of a constrained bitrate budget and shows up as softness and blocking in motion
+- `-hls_time 3` → `-g 72`, sensible
+- `-hls_time 1` → `-g 24`, a keyframe **every second**, which eats a large fraction of a constrained bitrate budget and shows up as softness and blocking in motion
 
 ---
 
@@ -198,10 +198,10 @@ HLS needs a keyframe at every segment boundary, so Jellyfin derives the GOP from
 
 What to look for:
 
-- **`-low_power 1`** — the VDEnc path is active, HuC is doing rate control
-- **`hwaccel_output_format vaapi`** — decoded frames stay in GPU memory
-- **`hwmap`** chains — zero-copy handoffs between VAAPI, OpenCL and QSV contexts. Not memory copies
-- **`libx264` / `libx265` anywhere** — hardware failed, you're on the CPU
+- **`-low_power 1`**: the VDEnc path is active, HuC is doing rate control
+- **`hwaccel_output_format vaapi`**: decoded frames stay in GPU memory
+- **`hwmap`** chains: zero-copy handoffs between VAAPI, OpenCL and QSV contexts. Not memory copies
+- **`libx264` / `libx265` anywhere**: hardware failed, you're on the CPU
 - **`q=-0.0`** in the progress lines is normal for QSV; the driver doesn't report a quantiser back
 
 ### Watching it live
@@ -225,7 +225,7 @@ Intel N100, 1080p10 HDR10 HEVC → 720p SDR HEVC with tone mapping, audio downmi
 | VPP tone mapping | ~246 fps / **10.2x** realtime |
 | OpenCL BT.2390 tone mapping | ~252 fps / **10.3x** realtime |
 
-The OpenCL path is *not* slower here, because tone mapping runs **after** the downscale — it's shading 1280×720, not 1920×1080. You get the better curve essentially for free, and Jellyfin drops the `procamp_vaapi=b=16` brightness fudge it uses to compensate for VPP's cruder curve.
+The OpenCL path is *not* slower here, because tone mapping runs **after** the downscale, so it's shading 1280×720, not 1920×1080. You get the better curve essentially for free, and Jellyfin drops the `procamp_vaapi=b=16` brightness fudge it uses to compensate for VPP's cruder curve.
 
 ---
 
@@ -242,7 +242,7 @@ Things that quietly force a transcode:
 - Image-based subtitles (PGS/VOBSUB) needing burn-in
 - HDR → SDR tone mapping for an SDR client
 - A client bitrate cap below the source bitrate
-- Unsupported audio codec (transcodes audio only — CPU work, not GPU)
+- Unsupported audio codec (transcodes audio only; CPU work, not GPU)
 
 Also GPU-accelerated outside playback: **trickplay/BIF thumbnail generation** and chapter image extraction. Both hammer the GPU during library scans.
 
@@ -254,27 +254,27 @@ Separate from video, but it came up alongside.
 
 **Audio boost when downmixing** and **Stereo Downmix Algorithm** only apply when ffmpeg is actually downmixing multichannel to stereo. On a stereo source that's direct played or `-codec:a copy`'d, they do nothing.
 
-Check the source first — if it's already `stereo`, no setting on that page will help and the quietness is just how the file was mastered.
+Check the source first. If it's already `stereo`, no setting on that page will help and the quietness is just how the file was mastered.
 
 When a downmix *is* happening, the algorithm choice matters:
 
 | Algorithm | Behaviour |
 |---|---|
 | **None** | ffmpeg defaults; centre ≈ -3 dB |
-| **Dave750** | `c0 = 0.5*FC + 0.707*FL + 0.707*BL + 0.5*LFE` — centre weighted **below** fronts/surrounds. Preserves bass and space, does *not* help dialogue |
+| **Dave750** | `c0 = 0.5*FC + 0.707*FL + 0.707*BL + 0.5*LFE`, centre weighted **below** fronts/surrounds. Preserves bass and space, does *not* help dialogue |
 | **NightmodeDialogue** | Centre pushed forward, surrounds attenuated. Best speech intelligibility, flatter mix |
 | **RFC7845** | Ogg Opus spec matrix; close to None |
 | **AC-4** | Dolby's coefficients |
 
-If dialogue is getting lost, reach for **NightmodeDialogue** before raising the boost — boost amplifies the loud peaks too.
+If dialogue is getting lost, reach for **NightmodeDialogue** before raising the boost, because boost amplifies the loud peaks too.
 
 ### Why film audio feels quiet vs. PC content
 
-Film and TV are mastered with wide dynamic range around a reference level. Almost everything on a PC — YouTube, web players, music — is loudness-normalised to roughly -14 LUFS and heavily compressed. Same volume slider, very different result.
+Film and TV are mastered with wide dynamic range around a reference level. Almost everything on a PC (YouTube, web players, music) is loudness-normalised to roughly -14 LUFS and heavily compressed. Same volume slider, very different result.
 
 Jellyfin's LUFS normalisation covers music libraries only, not video. Real fixes live downstream: your TV's Auto Volume / DRC, or forcing the downmix to the server (set client max audio channels to 2) so ffmpeg does it properly instead of the TV.
 
-> If your TV feeds an external stereo DAC over optical, note that optical is 2ch PCM or bitstream DD only. A stereo PCM DAC can't decode bitstream, so the TV must be set to **PCM** — meaning *the TV* is doing the 5.1 downmix unless you force it server-side.
+> If your TV feeds an external stereo DAC over optical, note that optical is 2ch PCM or bitstream DD only. A stereo PCM DAC can't decode bitstream, so the TV must be set to **PCM**, meaning *the TV* is doing the 5.1 downmix unless you force it server-side.
 
 ---
 
@@ -282,10 +282,10 @@ Jellyfin's LUFS normalisation covers music libraries only, not video. Real fixes
 
 - [ ] `firmware-intel-graphics`, **not** `firmware-misc-nonfree` (Debian 13+)
 - [ ] `non-free-firmware` component enabled in apt sources
-- [ ] `update-initramfs -u` then **reboot** — firmware is fetched at i915 init
+- [ ] `update-initramfs -u` then **reboot**, since firmware is fetched at i915 init
 - [ ] `/dev/dri` passed into the container, render GID matched
 - [ ] OpenCL Docker mod installed if using OpenCL tone mapping
-- [ ] Don't enable both VPP and OpenCL tone mapping — VPP wins and OpenCL sits idle
+- [ ] Don't enable both VPP and OpenCL tone mapping; VPP wins and OpenCL sits idle
 - [ ] Segment length ≥ 3 s
 - [ ] Check whether audio is even being downmixed before touching downmix settings
 

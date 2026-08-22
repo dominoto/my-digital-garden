@@ -81,7 +81,7 @@ Next, “Choose a region for deployment”. I used “ams” for Amsterdam.
 
 At this point, flyctl creates a shell of an app for you and writes a starter configuration to a “fly.toml” file.
 
-Last is “Select configuration” prompt. Choose Development — Single node since it’s free.
+Last is “Select configuration” prompt. Choose Development - Single node since it’s free.
 
 **Step 5: Create a PostgreSQL database**
 

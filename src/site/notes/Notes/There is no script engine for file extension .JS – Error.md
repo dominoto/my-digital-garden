@@ -11,10 +11,10 @@ When you try to run a `.js` file on Windows, you may hit one of these errors:
 
 ## What's actually happening
 
-Windows treats `.js` files as **JScript** scripts, to be executed by Windows Script Host (WSH). For that to work, two registry pieces must be intact: the JScript engine itself must be registered, and the `.js` extension must be associated with it. The error means one of those is missing or broken — commonly after installing a code editor or dev tool that claimed the `.js` association for itself, after a registry "cleaner" pass, or because an admin or antivirus disabled it deliberately (WSH is a classic malware vector).
+Windows treats `.js` files as **JScript** scripts, to be executed by Windows Script Host (WSH). For that to work, two registry pieces must be intact: the JScript engine itself must be registered, and the `.js` extension must be associated with it. The error means one of those is missing or broken, commonly after installing a code editor or dev tool that claimed the `.js` association for itself, after a registry "cleaner" pass, or because an admin or antivirus disabled it deliberately (WSH is a classic malware vector).
 
 > [!note] If your script is actually Node.js
-> Double-clicking a `.js` file never runs it with Node — Windows hands it to WSH, which can't understand modern JavaScript. If that's your situation, this error is a red herring: run the file with `node filename.js` from a terminal instead. The fixes below are only for scripts genuinely written for Windows Script Host.
+> Double-clicking a `.js` file never runs it with Node. Windows hands it to WSH, which can't understand modern JavaScript. If that's your situation, this error is a red herring: run the file with `node filename.js` from a terminal instead. The fixes below are only for scripts genuinely written for Windows Script Host.
 
 ## Fix 1: Re-register the JScript engine
 
@@ -24,7 +24,7 @@ Open an elevated Command Prompt (right-click Start → *Terminal (Admin)*) and r
 regsvr32 %systemroot%\system32\jscript.dll
 ```
 
-You should get a "succeeded" dialog. Try the script again — for many people this alone solves it.
+You should get a "succeeded" dialog. Try the script again. For many people this alone solves it.
 
 ## Fix 2: Restore the .js file association
 
@@ -67,7 +67,7 @@ Create a file `test.js` containing:
 WScript.Echo("JScript works!");
 ```
 
-Double-click it — a message box means WSH is healthy again. Or run `cscript test.js` in a terminal for console output.
+Double-click it. A message box means WSH is healthy again. Or run `cscript test.js` in a terminal for console output.
 
 If this guide saved you some time, you can say thanks with a coffee:
 

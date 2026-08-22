@@ -1,9 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/home/","title":"Domagoj Zubac","contentClasses":"homepage","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowToc":"false","created":"2024-02-12","updated":"2026-08-22","dg-note-properties":{"permalink":"/digital-garden/home/","title":"Domagoj Zubac","description":"Personal site and digital garden of Domagoj Zubac — guides and notes on homelab, Android, gaming and web development.","tags":["gardenEntry"],"cssclasses":["homepage"],"created":"2024-02-12","modified":"2026-08-22"}}
+{"dg-publish":true,"permalink":"/digital-garden/home/","title":"Domagoj Zubac","contentClasses":"homepage","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowToc":"false","created":"2024-02-12","updated":"2026-08-22","dg-note-properties":{"permalink":"/digital-garden/home/","title":"Domagoj Zubac","description":"Personal site and digital garden of Domagoj Zubac: guides and notes on homelab, Android, gaming and web development.","tags":["gardenEntry"],"cssclasses":["homepage"],"created":"2024-02-12","modified":"2026-08-22"}}
 ---
 
 
-<p class="hero-tagline">PHP/Laravel developer &amp; application support specialist from Rijeka, Croatia — ex-automation engineer with a homelab habit.</p>
+<p class="hero-tagline">Software developer from Rijeka, Croatia. Ex-automation engineer with a homelab habit.</p>
 
 <div class="hero-links">
 <a href="/digital-garden/cv/">CV</a>
@@ -11,7 +11,7 @@
 <a href="https://ko-fi.com/dominoto" rel="noopener">Ko-fi ☕</a>
 </div>
 
-**What is this site? 🤔** A [Digital Garden](https://www.thunknotes.com/blog/what-is-a-digital-garden) that doubles as a portfolio — content starts unfinished and imperfect, and evolves with nurture over time.
+**What is this site? 🤔** A [Digital Garden](https://www.thunknotes.com/blog/what-is-a-digital-garden) that doubles as a portfolio. Content starts unfinished and imperfect, and evolves with nurture over time.
 
 ## Latest writing
 

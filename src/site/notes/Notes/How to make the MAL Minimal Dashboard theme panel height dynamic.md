@@ -63,7 +63,7 @@ footer {
 | Value | Result |
 |---|---|
 | `50vh` | Panel ends at half the screen height |
-| `60vh` | Panel takes up 60% — good default for most screens |
+| `60vh` | Panel takes up 60%, a good default for most screens |
 | `70vh` | More room for longer lists on tall monitors |
 | `calc(100vh - 100px)` | Near-fullscreen with a small gap at the bottom |
 
