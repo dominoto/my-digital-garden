@@ -1,0 +1,13 @@
+{% if meta.siteBaseUrl %}
+<link rel="canonical" href="{{ meta.siteBaseUrl }}{{ page.url | url }}" />
+<meta property="og:url" content="{{ meta.siteBaseUrl }}{{ page.url | url }}" />
+<meta property="og:image" content="{{ meta.siteBaseUrl }}/apple-touch-icon.png" />
+{% endif %}
+<meta property="og:site_name" content="{{ meta.siteName }}" />
+<meta property="og:type" content="{% if page.url == '/' %}website{% else %}article{% endif %}" />
+<meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ page.fileSlug }}{% endif %}" />
+{% if description %}
+<meta name="description" content="{{ description }}" />
+<meta property="og:description" content="{{ description }}" />
+{% endif %}
+<meta name="twitter:card" content="summary" />
