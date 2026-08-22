@@ -1,93 +1,25 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/home/","title":"Homepage","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowToc":"false","created":"2024-02-12","updated":"2025-10-12","dg-note-properties":{"permalink":"/digital-garden/home/","title":"Homepage","tags":["gardenEntry"],"created":"2024-02-12","modified":"2025-10-12"}}
+{"dg-publish":true,"permalink":"/digital-garden/home/","title":"Domagoj Zubac","contentClasses":"homepage","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowToc":"false","created":"2024-02-12","updated":"2026-08-22","dg-note-properties":{"permalink":"/digital-garden/home/","title":"Domagoj Zubac","description":"Personal site and digital garden of Domagoj Zubac — guides and notes on homelab, Android, gaming and web development.","tags":["gardenEntry"],"cssclasses":["homepage"],"created":"2024-02-12","modified":"2026-08-22"}}
 ---
 
 
-<style>
- * {
- /* Override the default theme width just for homepage */
-  max-width: none !important;
-}
-</style>
+<p class="hero-tagline">PHP/Laravel developer &amp; application support specialist from Rijeka, Croatia — ex-automation engineer with a homelab habit.</p>
 
-<div class="homeContainer">
-<div class="homeMain">
-
-**I'm an ex-Automation engineer who also worked as Occupational Health and Safety specialist located in Rijeka, Croatia.** Currently working in IT as a PHP/Laravel Developer and Application Support Specialist.
-
-Feel free to check my [[Digital Garden/CV\|CV]] and [[Digital Garden/Contact Me\|Contact Me]] if you’re interested in working together.
-
-<!-- Find out more in About Me. -->
-<!--
-> [!important] Currently seeking work
-> I'm currently seeking work as a JavaScript developer without experience. Please check my [[Digital Garden/CV\|CV]] and [[Digital Garden/Contact Me\|Contact Me]] if you’re interested in working together.
--->
-
-**What is this site? 🤔** It's a kind of [Digital Garden](https://www.thunknotes.com/blog/what-is-a-digital-garden) that is also used as a portfolio. That means that the content can be unfinished and imperfect at first, but evolved with nurture over time.
-
-## Currently reading
-
-<style type="text/css" media="screen">
-  .gr_grid_container {
-    /* customize grid container div here. eg: width: 500px; */
-    display: flex;
-    flex-direction: row;
-  }
-
-  .gr_grid_book_container {
-    /* customize book cover container div here */
-    padding: 0px 0px;
-    overflow: hidden;
-    margin: 2px;
-  }
-    
-  .gr_grid_book_container img {
-    width: 100% !important;
-    height: 100% !important;
-    border-radius: 14px !important;
-  }
-</style>
-
-<script src="https://www.goodreads.com/review/grid_widget/60415124.Currently%20reading?cover_size=medium&hide_link=true&hide_title=true&num_books=8&order=d&shelf=currently-reading&sort=date_updated&widget_id=1710370254" type="text/javascript" charset="utf-8"></script>
-
-## Last read
-
-<script src="https://www.goodreads.com/review/grid_widget/60415124.Domagoj's%20read%20book%20montage?cover_size=medium&hide_link=true&hide_title=true&num_books=8&order=d&shelf=read&sort=date_updated&widget_id=1710371440" type="text/javascript" charset="utf-8"></script>
-
+<div class="hero-links">
+<a href="/digital-garden/cv/">CV</a>
+<a href="/digital-garden/contact-me/">Contact Me</a>
+<a href="https://ko-fi.com/dominoto" rel="noopener">Ko-fi ☕</a>
 </div>
-<div class="homeSidebar">
 
-## Topics
+**What is this site? 🤔** A [Digital Garden](https://www.thunknotes.com/blog/what-is-a-digital-garden) that doubles as a portfolio — content starts unfinished and imperfect, and evolves with nurture over time.
 
-<!--
-- [[CSS\|CSS]]
-- [[LM Studio\|LM Studio]]
-- [[MyAnimeList\|MyAnimeList]]
-- [[Notes/Android\|Android]]
-- [[Notes/Gaming\|Gaming]]
-- [[Notes/Homelab\|Homelab]]
-- [[Notes/React\|React]]
-- [[Python\|Python]]
-- [[Web Development\|Web Development]]
-- [[Windows\|Windows]]
-
-{ .block-language-dataview}
--->
-- [[Digital Garden/Android 🌐\|Android 🌐]]
-- [[Digital Garden/Gaming 🌐\|Gaming 🌐]]
-- [[Digital Garden/Homelab 🌐\|Homelab 🌐]]
-- [[Digital Garden/React 🌐\|React 🌐]]
-
-{ .block-language-dataview}
-
-[[Digital Garden/Topics\|More...]]
-
-## Articles
+## Latest writing
 
 - [[Notes/Fixing Intel N100 hardware transcoding in Jellyfin\|Fixing Intel N100 hardware transcoding in Jellyfin]]
 - [[Notes/Ghost of Tsushima crashing with DXGI error\|Ghost of Tsushima crashing with DXGI error]]
 - [[Notes/Resetting the filter on a Xiaomi Mi Air Purifier 4\|Resetting the filter on a Xiaomi Mi Air Purifier 4]]
 - [[Notes/Split-horizon DNS breaks Let's Encrypt renewal in Cosmos Cloud\|Split-horizon DNS breaks Let's Encrypt renewal in Cosmos Cloud]]
+- [[Notes/There is no script engine for file extension .JS – Error\|There is no script engine for file extension .JS – Error]]
 
 { .block-language-dataview}
 
@@ -102,4 +34,17 @@ Feel free to check my [[Digital Garden/CV\|CV]] and [[Digital Garden/Contact Me\
 
 [[Digital Garden/Notes\|More...]]
 
-</div></div>
+## Topics
+
+<div class="topicPills">
+
+- [[Digital Garden/Android 🌐\|Android 🌐]]
+- [[Digital Garden/Gaming 🌐\|Gaming 🌐]]
+- [[Digital Garden/Homelab 🌐\|Homelab 🌐]]
+- [[Digital Garden/React 🌐\|React 🌐]]
+
+{ .block-language-dataview}
+
+</div>
+
+[[Digital Garden/Topics\|More...]]

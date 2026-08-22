@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Resources/Installing Android on an old Windows tablet.md","permalink":"/resources/installing-android-on-an-old-windows-tablet/","created":"2024-04-18","updated":"2026-08-20","dg-note-properties":{"type":["[[Notes/Article]]"],"topics":["[[Notes/Android]]"],"created":"2024-04-18","modified":"2026-08-20","author":["Domagoj Zubac"]}}
+{"dg-publish":true,"dg-path":"Resources/Installing Android on an old Windows tablet.md","permalink":"/resources/installing-android-on-an-old-windows-tablet/","created":"2024-04-18","updated":"2026-08-20","dg-note-properties":{"type":["[[Notes/Article]]"],"topics":["[[Notes/Android]]"],"created":"2024-04-18","modified":"2026-08-20","author":["Domagoj Zubac"],"description":"Install Android on a Windows tablet with 64-bit CPU and 32-bit UEFI."}}
 ---
 
 

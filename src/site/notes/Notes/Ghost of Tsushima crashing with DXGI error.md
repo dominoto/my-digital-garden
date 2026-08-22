@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Resources/Ghost of Tsushima crashing with DXGI error.md","permalink":"/resources/ghost-of-tsushima-crashing-with-dxgi-error/","created":"2024-07-30","updated":"2026-08-22","dg-note-properties":{"type":["[[Notes/Article]]"],"topics":["[[Notes/Gaming]]"],"created":"2024-07-30","modified":"2026-08-22","author":["Domagoj Zubac"]}}
+{"dg-publish":true,"dg-path":"Resources/Ghost of Tsushima crashing with DXGI error.md","permalink":"/resources/ghost-of-tsushima-crashing-with-dxgi-error/","created":"2024-07-30","updated":"2026-08-22","dg-note-properties":{"type":["[[Notes/Article]]"],"topics":["[[Notes/Gaming]]"],"created":"2024-07-30","modified":"2026-08-22","author":["Domagoj Zubac"],"description":"Fix the DXGI_ERROR_DEVICE_HUNG crash in Ghost of Tsushima on PC by switching the renderer from DirectX 12 to Vulkan using vkd3d-proton and dxvk."}}
 ---
 
 
