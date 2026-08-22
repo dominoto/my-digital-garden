@@ -72,4 +72,6 @@ Reflecting on the challenges faced during deployment, it became evident that met
 
 Deploying a React app to GitHub Pages involves more than a simple `npm deploy`. By addressing specific challenges related to configuration and routing, you can ensure a smooth deployment process. Remember to adapt these solutions to your own projects, and explore further resources to enhance your deployment skills.
 
-If you found this helpful, feel free to [<img style="float:none" src="https://user-images.githubusercontent.com/14358394/115450238-f39e8100-a21b-11eb-89d0-fa4b82cdbce8.png" width="150">](https://ko-fi.com/dominoto) 🙂
+If this guide saved you some time, you can say thanks with a coffee:
+
+<a href="https://ko-fi.com/dominoto"><img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" width="200" alt="Buy me a coffee at ko-fi.com"></a>

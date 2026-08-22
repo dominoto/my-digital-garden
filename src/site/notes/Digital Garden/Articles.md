@@ -5,10 +5,13 @@
 
 ## List of my Articles
 
+- [[Notes/Fixing Intel N100 hardware transcoding in Jellyfin\|Fixing Intel N100 hardware transcoding in Jellyfin]]
+- [[Notes/Ghost of Tsushima crashing with DXGI error\|Ghost of Tsushima crashing with DXGI error]]
+- [[Notes/Resetting the filter on a Xiaomi Mi Air Purifier 4\|Resetting the filter on a Xiaomi Mi Air Purifier 4]]
+- [[Notes/There is no script engine for file extension .JS – Error\|There is no script engine for file extension .JS – Error]]
 - [[Notes/A Secure, Port-Free Homelab with Cloudflare Tunnels, Cosmos, and Split-DNS\|A Secure, Port-Free Homelab with Cloudflare Tunnels, Cosmos, and Split-DNS]]
 - [[Notes/How to make the MAL Minimal Dashboard theme panel height dynamic\|How to make the MAL Minimal Dashboard theme panel height dynamic]]
 - [[Notes/Installing Android on an old Windows tablet\|Installing Android on an old Windows tablet]]
-- [[Notes/Ghost of Tsushima crashing with DXGI error\|Ghost of Tsushima crashing with DXGI error]]
 - [[Notes/Deploying a React App with GitHub Pages, React Router, and Vite - Overcoming Deployment Challenges\|Deploying a React App with GitHub Pages, React Router, and Vite - Overcoming Deployment Challenges]]
 - [[Notes/Swapping Heroku with Render and fly for your full stack React app\|Swapping Heroku with Render and fly for your full stack React app]]
 

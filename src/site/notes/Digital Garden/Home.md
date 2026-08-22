@@ -69,6 +69,7 @@ Feel free to check my [[Digital Garden/CV\|CV]] and [[Digital Garden/Contact Me\
 - [[Notes/React\|React]]
 - [[Python\|Python]]
 - [[Web Development\|Web Development]]
+- [[Windows\|Windows]]
 
 { .block-language-dataview}
 -->
@@ -83,10 +84,10 @@ Feel free to check my [[Digital Garden/CV\|CV]] and [[Digital Garden/Contact Me\
 
 ## Articles
 
-- [[Notes/A Secure, Port-Free Homelab with Cloudflare Tunnels, Cosmos, and Split-DNS\|A Secure, Port-Free Homelab with Cloudflare Tunnels, Cosmos, and Split-DNS]]
-- [[Notes/How to make the MAL Minimal Dashboard theme panel height dynamic\|How to make the MAL Minimal Dashboard theme panel height dynamic]]
-- [[Notes/Installing Android on an old Windows tablet\|Installing Android on an old Windows tablet]]
+- [[Notes/Fixing Intel N100 hardware transcoding in Jellyfin\|Fixing Intel N100 hardware transcoding in Jellyfin]]
 - [[Notes/Ghost of Tsushima crashing with DXGI error\|Ghost of Tsushima crashing with DXGI error]]
+- [[Notes/Resetting the filter on a Xiaomi Mi Air Purifier 4\|Resetting the filter on a Xiaomi Mi Air Purifier 4]]
+- [[Notes/Split-horizon DNS breaks Let's Encrypt renewal in Cosmos Cloud\|Split-horizon DNS breaks Let's Encrypt renewal in Cosmos Cloud]]
 
 { .block-language-dataview}
 

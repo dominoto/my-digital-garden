@@ -167,4 +167,6 @@ This guide provides a comprehensive walkthrough for setting up a secure, self-ho
 
 ---
 
-If you found this helpful, feel free to [<img style="float:none" src="https://user-images.githubusercontent.com/14358394/115450238-f39e8100-a21b-11eb-89d0-fa4b82cdbce8.png" width="150">](https://ko-fi.com/dominoto) 🙂
+If this guide saved you some time, you can say thanks with a coffee:
+
+<a href="https://ko-fi.com/dominoto"><img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" width="200" alt="Buy me a coffee at ko-fi.com"></a>

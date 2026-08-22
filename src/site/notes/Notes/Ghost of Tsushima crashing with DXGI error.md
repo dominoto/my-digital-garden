@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Resources/Ghost of Tsushima crashing with DXGI error.md","permalink":"/resources/ghost-of-tsushima-crashing-with-dxgi-error/","created":"2024-07-30","updated":"2026-08-15","dg-note-properties":{"type":["[[Notes/Article]]"],"topics":["[[Notes/Gaming]]"],"created":"2024-07-30","modified":"2026-08-15","author":["Domagoj Zubac"]}}
+{"dg-publish":true,"dg-path":"Resources/Ghost of Tsushima crashing with DXGI error.md","permalink":"/resources/ghost-of-tsushima-crashing-with-dxgi-error/","created":"2024-07-30","updated":"2026-08-22","dg-note-properties":{"type":["[[Notes/Article]]"],"topics":["[[Notes/Gaming]]"],"created":"2024-07-30","modified":"2026-08-22","author":["Domagoj Zubac"]}}
 ---
 
 
@@ -38,9 +38,10 @@ dxgi.enableHDR = True
 > If you don't use HDR, feel free to change `dxgi.enableHDR` to `False`.
 > If you are planning to use ReShade or something similar, ==install it for Vulcan== instead of DX12.
 
-Happy gaming! :)
 
-If you found this helpful, feel free to [<img style="float:none" src="https://user-images.githubusercontent.com/14358394/115450238-f39e8100-a21b-11eb-89d0-fa4b82cdbce8.png" width="150">](https://ko-fi.com/dominoto) 🙂
+If this guide saved you some time, you can say thanks with a coffee:
+
+<a href="https://ko-fi.com/dominoto"><img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" width="200" alt="Buy me a coffee at ko-fi.com"></a>
 
 ---
 References:

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Resources/Local HTTP server using Python.md","permalink":"/resources/local-http-server-using-python/","created":"2024-03-02","updated":"2025-10-12","dg-note-properties":{"type":["[[Note]]"],"topics":["[[Web Development]]","[[Python]]"],"created":"2024-03-02","modified":"2025-10-12","author":["Domagoj Zubac"]}}
+{"dg-publish":true,"dg-path":"Resources/Local HTTP server using Python.md","permalink":"/resources/local-http-server-using-python/","created":"2024-03-02","updated":"2025-10-12","dg-note-properties":{"type":["[[Notes/Note]]"],"topics":["[[Web Development]]","[[Python]]"],"created":"2024-03-02","modified":"2025-10-12","author":["Domagoj Zubac"]}}
 ---
 
 ## How to run a local HTTP server using Python to check your website functionality easily
