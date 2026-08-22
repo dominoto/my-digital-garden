@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/home/","title":"Homepage","contentClasses":"","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowToc":"false","created":"2024-02-12","updated":"2025-10-12","dg-note-properties":{"permalink":"/digital-garden/home/","title":"Homepage","cssclasses":[],"tags":["gardenEntry"],"created":"2024-02-12","modified":"2025-10-12"}}
+{"dg-publish":true,"permalink":"/digital-garden/home/","title":"Homepage","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowToc":"false","created":"2024-02-12","updated":"2025-10-12","dg-note-properties":{"permalink":"/digital-garden/home/","title":"Homepage","tags":["gardenEntry"],"created":"2024-02-12","modified":"2025-10-12"}}
 ---
 
 
@@ -63,19 +63,19 @@ Feel free to check my [[Digital Garden/CV\|CV]] and [[Digital Garden/Contact Me\
 - [[CSS\|CSS]]
 - [[LM Studio\|LM Studio]]
 - [[MyAnimeList\|MyAnimeList]]
+- [[Notes/Android\|Android]]
+- [[Notes/Gaming\|Gaming]]
+- [[Notes/Homelab\|Homelab]]
+- [[Notes/React\|React]]
 - [[Python\|Python]]
-- [[Resources/Android\|Android]]
-- [[Resources/Gaming\|Gaming]]
-- [[Resources/Homelab\|Homelab]]
-- [[Resources/React\|React]]
 - [[Web Development\|Web Development]]
 
 { .block-language-dataview}
 -->
-- [[Resources/Android\|Android]]
-- [[Resources/Gaming\|Gaming]]
-- [[Resources/Homelab\|Homelab]]
-- [[Resources/React\|React]]
+- [[Digital Garden/Android 🌐\|Android 🌐]]
+- [[Digital Garden/Gaming 🌐\|Gaming 🌐]]
+- [[Digital Garden/Homelab 🌐\|Homelab 🌐]]
+- [[Digital Garden/React 🌐\|React 🌐]]
 
 { .block-language-dataview}
 
@@ -83,10 +83,10 @@ Feel free to check my [[Digital Garden/CV\|CV]] and [[Digital Garden/Contact Me\
 
 ## Articles
 
-- [[Resources/A Secure, Port-Free Homelab with Cloudflare Tunnels, Cosmos, and Split-DNS\|A Secure, Port-Free Homelab with Cloudflare Tunnels, Cosmos, and Split-DNS]]
-- [[Resources/How to make the MAL Minimal Dashboard theme panel height dynamic\|How to make the MAL Minimal Dashboard theme panel height dynamic]]
-- [[Resources/Installing Android on an old Windows tablet\|Installing Android on an old Windows tablet]]
-- [[Resources/Ghost of Tsushima crashing with DXGI error\|Ghost of Tsushima crashing with DXGI error]]
+- [[Notes/A Secure, Port-Free Homelab with Cloudflare Tunnels, Cosmos, and Split-DNS\|A Secure, Port-Free Homelab with Cloudflare Tunnels, Cosmos, and Split-DNS]]
+- [[Notes/How to make the MAL Minimal Dashboard theme panel height dynamic\|How to make the MAL Minimal Dashboard theme panel height dynamic]]
+- [[Notes/Installing Android on an old Windows tablet\|Installing Android on an old Windows tablet]]
+- [[Notes/Ghost of Tsushima crashing with DXGI error\|Ghost of Tsushima crashing with DXGI error]]
 
 { .block-language-dataview}
 
@@ -94,8 +94,8 @@ Feel free to check my [[Digital Garden/CV\|CV]] and [[Digital Garden/Contact Me\
 
 ## Notes
 
-- [[Resources/Local HTTP server using Python\|Local HTTP server using Python]]
-- [[Resources/Failed to start server on port 1234\|Failed to start server on port 1234]]
+- [[Notes/Local HTTP server using Python\|Local HTTP server using Python]]
+- [[Notes/Failed to start server on port 1234\|Failed to start server on port 1234]]
 
 { .block-language-dataview}
 
