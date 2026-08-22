@@ -1,38 +1,10 @@
 // Global styling -----------------------------------------------------------
 body {
-  /***
-      ADD YOUR CUSTOM STYLIING HERE. (INSIDE THE body {...} section.)
-      IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
-   ***/
   font-family: "Rubik", sans-serif !important;
 }
 
 a:link {
   text-decoration: none;
-}
-
-// Container for content on Homepage ----------------------------------------
-.homeContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 1rem;
-}
-
-// Main content area --------------------------------------------------------
-.homeMain {
-  flex-basis: calc(70% - 10px);
-  /* Adjust the width and margins as needed */
-  margin-bottom: 20px;
-  /* Adjust the margin between columns */
-}
-
-// Sidebar area -------------------------------------------------------------
-.homeSidebar {
-  flex-basis: calc(30% - 10px);
-  /* Adjust the width and margins as needed */
-  margin-bottom: 20px;
-  /* Adjust the margin between columns */
 }
 
 // Font classes -------------------------------------------------------------
@@ -48,4 +20,70 @@ a:link {
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
+}
+
+// Homepage (single column) -------------------------------------------------
+// Scoped via `cssclasses: [homepage]` in Home.md so no other page is affected.
+.homepage {
+  .hero-tagline {
+    font-size: 1.15em;
+    color: var(--text-muted);
+    margin: 0.2rem 0 1.4rem;
+  }
+
+  .hero-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 2rem;
+
+    a {
+      display: inline-block;
+      padding: 0.35rem 1.1rem;
+      border: 1px solid var(--text-accent);
+      border-radius: 4px;
+      color: var(--text-accent);
+      text-decoration: none;
+      transition: background-color 0.15s ease, color 0.15s ease;
+
+      &:hover {
+        background-color: var(--text-accent);
+        color: var(--background-primary, #000);
+      }
+    }
+  }
+
+  h2 {
+    margin-top: 2.4rem;
+  }
+
+  ul li {
+    margin: 0.35rem 0;
+  }
+
+  .topicPills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    li {
+      margin: 0;
+
+      a {
+        display: inline-block;
+        padding: 0.25rem 0.9rem;
+        border: 1px solid var(--link-color, var(--text-accent));
+        border-radius: 999px;
+        text-decoration: none;
+
+        &:hover {
+          background-color: var(--link-color, var(--text-accent));
+          color: var(--background-primary, #000);
+        }
+      }
+    }
+  }
 }
