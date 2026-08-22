@@ -53,7 +53,7 @@ Edit `/etc/systemd/resolved.conf` (or a drop-in under `/etc/systemd/resolved.con
 [Resolve]
 DNS=1.1.1.1 8.8.8.8
 Domains=~.
-DNSStubListener=yes
+DNSStubListener=no
 ```
 
 Then:
@@ -66,8 +66,16 @@ resolvectl status | grep -A3 'Global'
 Confirm the `Global` block now shows:
 
 ```
-  resolv.conf mode: stub
-       DNS Servers: 1.1.1.1 8.8.8.8
+  resolv.conf mode: uplink
+Current DNS Server: 1.1.1.1
+```
+
+And that `/etc/resolv.conf` lists the upstreams directly:
+
+```bash
+grep nameserver /etc/resolv.conf
+# nameserver 1.1.1.1
+# nameserver 8.8.8.8
 ```
 
 Restart Cosmos so it picks up the new resolv.conf, then retry the cert:
@@ -76,11 +84,66 @@ Restart Cosmos so it picks up the new resolv.conf, then retry the cert:
 systemctl restart CosmosCloud.service
 ```
 
-Now lego resolves `kosto.top` through the stub (`127.0.0.53`) → 1.1.1.1 → discovers **Cloudflare** as authoritative → finds the TXT it wrote there → self-check passes → Let's Encrypt validates against the same public view. Green. ✅
+Now lego resolves `kosto.top` via 1.1.1.1 → discovers **Cloudflare** as authoritative → finds the TXT it wrote there → self-check passes → Let's Encrypt validates against the same public view. Green. ✅
 
-> [!warning] Two config gotchas that bit me
-> - **`Domains=~.` needs a tilde**, not a hyphen. `~.` = "route *all* lookups to these servers." `-.` is exclusion syntax and does nothing useful here. One character; easy to miss.
-> - **`DNSStubListener` must be `yes`.** With it set to `no`, nothing listens on `127.0.0.53`, which is exactly the address the resolv.conf symlink (and therefore Cosmos) points at. Turning the stub on is what flips `resolv.conf mode` from `uplink` to `stub`.
+> [!warning] Config gotchas
+> - **`Domains=~.` needs a tilde**, not a hyphen. `~.` = "route *all* lookups to these servers." `-.` is exclusion syntax and does nothing useful here. One character; easy to miss. **`DNS=` plus `Domains=~.` are the only two settings the cert fix actually needs.**
+> - **Leave `DNSStubListener=no`.** It was already `no` on this box; don't "fix" it. With the stub off, `resolv.conf` runs in **uplink** mode and lists `1.1.1.1`/`8.8.8.8` directly, which is exactly what Cosmos reads. Setting it to `yes` also technically works (stub mode → `127.0.0.53` → same upstreams), but there's no reason to change it.
+> - ⚠️ **Correction to the first version of this note:** it claimed the stub listener steals port 53 from Technitium. **That is wrong.** Technitium runs as a *bridged* container in its own network namespace, so its internal `:53` cannot conflict with the host's `127.0.0.53:53`. They coexist fine. The real port-53 outage had a completely different cause — see below.
+
+## Second incident: Technitium container loses published port 53
+
+Unrelated to the cert work, but it hit a few days later and *looked* like the same class of problem, so it's worth recording separately.
+
+**Symptom:** every `*.kosto.top` name stops resolving on LAN clients. Browser shows `DNS_PROBE_POSSIBLE` / `ERR_FAILED`. `Resolve-DnsName` without `-Server` falls through to the **public** view and returns Cloudflare's SOA for `kosto.top` with no A record. Meanwhile `docker ps` shows the container **"Up"** and the web UI on `:5380` works fine, so it looks perfectly healthy.
+
+**Cause:** the container had been recreated at some point *without its port mappings*. Technitium was listening on `:53` inside its own namespace, but nothing mapped that to `192.168.0.12:53`.
+
+**Diagnose:**
+
+```bash
+dig immich.kosto.top @192.168.0.12 +short   # connection refused (NOT timeout)
+ss -tulnp | grep -w ':53'                   # no listener at all
+docker logs --tail 30 Dns-server            # hostname is a container ID → bridge networking
+docker ps -a | grep -i technitium           # PORTS column empty → no published ports
+```
+
+**Fix:** repull the image and recreate the container with ports published. Verify afterwards:
+
+```bash
+docker inspect Dns-server --format '{{json .HostConfig.PortBindings}}'
+```
+
+Known-good bindings for this box:
+
+```json
+{"53/tcp":[{"HostPort":"53"}],
+ "53/udp":[{"HostPort":"53"}],
+ "5380/tcp":[{"HostPort":"5380"}],
+ "8053/tcp":[{"HostPort":"8053"}]}
+```
+
+> [!tip] Read the error precisely
+> - **`connection refused`** = reachable, but *nothing is listening* → port not published / service not bound.
+> - **`timeout`** = nothing answered at all → host unreachable, firewall, or wrong IP.
+> - **`DNS_PROBE_POSSIBLE` / falls through to public SOA** = the client never got an answer from Technitium and resolved publicly instead.
+>
+> These three point at genuinely different causes. Don't lump them together.
+
+## Client-side gotcha: browser DoH bypasses Technitium
+
+If a name resolves fine in PowerShell but the **browser** times out or can't find it, suspect **Secure DNS (DNS-over-HTTPS)** in the browser. Brave with "Use secure DNS" on (even set to *OS default*) can resolve via public DoH, skipping Technitium entirely — so it gets the **public** record instead of `192.168.0.12`, and internal-only services appear dead.
+
+**Fix:** `brave://settings/security` → turn **Use secure DNS** off. On a LAN where you *want* split-horizon and ad-blocking, browser DoH works against you; its privacy benefit is about hiding lookups from your ISP, and your lookups already stop at your own Technitium box.
+
+If you want encrypted DNS anyway, set the provider to **Custom** and point it at Technitium's own DoH endpoint (e.g. `https://dns.kosto.top/dns-query`, which the wildcard cert already covers) rather than "OS default".
+
+**Always flush both caches after any DNS change**, since browsers cache *negative* results too:
+
+```powershell
+ipconfig /flushdns
+# plus: brave://net-internals/#dns → Clear host cache
+```
 
 ## The tradeoff (know where the lever is)
 
@@ -88,7 +151,7 @@ The OMV host itself now resolves `*.kosto.top` to **Cloudflare's public IP**, no
 
 If some process *on OMV* ever needs the LAN answer, scope it instead of overriding globally: keep `DNS=1.1.1.1 8.8.8.8`, drop `Domains=~.`, and add a per-link route sending only `kosto.top` to Technitium.
 
-**Clients are unaffected.** Phones/laptops still query Technitium via DHCP and keep the local `192.168.0.12` answers *and* ad-blocking. Only this one host changed.
+**Clients are unaffected.** Phones/laptops still query Technitium via DHCP and keep the local `192.168.0.12` answers *and* ad-blocking. Only this one host changed. The two coexist by design: **the host bypasses Technitium (needed for ACME), while LAN clients use it (split-horizon + ad-blocking).**
 
 ## Verify Technitium still does its job
 
@@ -119,13 +182,28 @@ Healthy result:
 
 Bonus tell: different **TTLs** from the two sources (e.g. `3600` from Technitium vs `300` from Cloudflare) confirm you're genuinely hitting two different authorities, not a cache crossover. `nslookup` showing `Server: UnKnown / Address: 192.168.0.12` is normal; it just means there's no PTR record for the resolver's own IP (cosmetic; add a reverse zone if it bothers you).
 
+## Full health check (host side)
+
+```bash
+resolvectl status | grep -A3 'Global'                                   # DNS Servers: 1.1.1.1 8.8.8.8
+grep nameserver /etc/resolv.conf                                        # 1.1.1.1 / 8.8.8.8 (uplink mode)
+dig immich.kosto.top @192.168.0.12 +short                               # 192.168.0.12
+docker inspect Dns-server --format '{{json .HostConfig.PortBindings}}'  # 53/tcp, 53/udp, 5380, 8053
+```
+
+All four green = cert renewal path healthy *and* split-horizon healthy.
+
 ## Persistence note
 
 Cert **renewal depends on this host resolving publicly.** The `resolved.conf` change is persistent config, so renewals keep working, but if the OMV box is ever rebuilt or systemd-resolved is reset, the `Domains=~.` + upstream setting must be reapplied or renewal breaks again with the same split-horizon symptom.
 
+Likewise, **LAN DNS depends on the Technitium container keeping its published ports.** A container recreate that drops `53:53` silently kills every internal name while still looking "Up".
+
 ## The one-line cause, for future me
 
 > Split-horizon zone in Technitium → lego's ACME self-check followed the host resolver to internal Technitium → Technitium claimed authority over `kosto.top` and hid Cloudflare → fix by pointing the host's systemd-resolved at public upstreams so ACME sees the real Cloudflare delegation.
+
+> And if internal names die later: check `ss -tulnp | grep -w ':53'` before blaming DNS config. *Connection refused* means the Technitium container lost its published ports, not that anything is misconfigured.
 
 ---
 
